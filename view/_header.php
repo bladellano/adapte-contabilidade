@@ -120,9 +120,7 @@
 
 
 </div>
-</div><!--container-->
-
-
+</div><!--CONTAINER-->
 
 
 <!-- <div class="rede">
@@ -135,9 +133,10 @@
    <ul class="nav-links">
     <li class="efeito-hr"><a href="./">Home<hr></a></li>
     <li class="efeito-hr"><a href="#sobre-nos">Sobre nós<hr></a></li>
-    <li>
+    
+    <li class="titulo-submenu"> <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
-      <a href="#">Contabilidade</a>
+      <a >Contabilidade</a>
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
       <div class="sub-menu">
         <ul>

@@ -968,6 +968,13 @@ h3.border-bottom.border-gray {
         border-radius: 3px;
     }
 
+    .click-submenu{ /* PARA DISPOSITIVOS MOBILE */
+        position: absolute;
+        background: var(--cor-color-principal);
+        display: block !important;
+        right: 162px;
+        top: 25px;
+    }
     .sub-menu {
         display: none;
         border-radius: 3px;
@@ -976,6 +983,7 @@ h3.border-bottom.border-gray {
 
     .nav-links li:hover .sub-menu {
         display: block;
+
         position: absolute;
         background: var(--cor-color-principal);
         margin-top: 10px;
