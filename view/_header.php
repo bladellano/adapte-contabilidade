@@ -18,9 +18,9 @@
   <title>.: Adapte Contabilidade :.</title>
 
   <meta name="author" content="FireFly Desenvolvimento">
-  <meta name="description" content="Acessória e Consultoria em Projetos Educacionais e Empresariais, Promoções de eventos educacionais e Assessoramento e Acompanhamento de estudos em aulas Particulares.">
-  <meta name="keywords" content="belém, pará, cursos, eventos, consultoria, assessoria, empresa, aulas particulares, negócio, escolas, educação básica, educação infantil, ensino fundamental, escolas profissionalizante, escolas técnicas, acadêmicos, mercado.">
-  <meta name="copyright" content="© 2019 Paideia Educacional" />
+  <meta name="description" content="A Melhor Tecnologia em Site para Escritórios de Contabilidade com Atualizações Diárias, Tenha um Escritório Virtual.  0800 337 3376.">
+  <meta name="keywords" content="site de contabilidade, site contabilidade, site para contabilidade, site para contador, site contabil, contabilidade, contabil, sistema contabil, sistema para contabilidade, site exclusivo contabil, contábil, site para escritório de contabilidade, site para escritório contábil, virtual contabilidade, o que precisa para abrir um escritório de contabilidade, como conseguir clientes contabilidade, como abrir uma contabilidade, online contabilidade, Como conquistar clientes para escritório de contabilidade, novidades na contabilidade, mercado de contabilidade, site do contador, notícias contabilidade, abrir um escritório de contabilidade, site contabilista, escritório online">
+  <meta name="copyright" content="© 2019 Adapte Contabilidade" />
 
   <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link href="lib/fontawesome/all.min.css" rel="stylesheet">
