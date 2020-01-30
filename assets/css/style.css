@@ -34,7 +34,27 @@ Desenvolvimento FireFly
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
-.box-evento {
+.slick-parceiros .slick-slide{
+  margin: 2px;
+  text-align: center;
+  line-height: 180px; 
+}
+.slick-slide img:hover{
+  filter:  opacity(100%);
+}
+.slick-slide img{
+  width: 120px;
+  /*margin-top: 30px;*/
+  display: inline-block;
+  filter: opacity(100%) grayscale(1);
+  transition: .3s;
+}
+/*.slick-parceiros .slick-prev:before,.slick-next:before {
+  color: #069;
+  }*/
+  /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+
+  .box-evento {
     width: 332px;
     height: 388px;
     position: relative;
@@ -268,15 +288,15 @@ body {
 }
 
 #sobre-nos h2 {
+    margin-top: 20px;
     text-align: center;
-    color: var(--cor-color-principal);
+    color:#333;
     text-transform: uppercase;
-    font-size: 26px;
 }
 
 #sobre-nos hr {
-    border: 2px solid var(--cor-color-principal);
-    width: 200px;
+    border: 2px solid #333;
+    width: 100px;
     margin: 0 auto;
 }
 
@@ -322,9 +342,9 @@ body {
 }
 
 #video-institucional small{
-color:#FFF;
-letter-spacing: 2.6px;
-font-size:.7em;
+    color:#FFF;
+    letter-spacing: 2.6px;
+    font-size:.7em;
 }
 #video-institucional p{
     color: #FFF;
@@ -337,7 +357,8 @@ font-size:.7em;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    border:1px solid red;
+    border-top:2px solid var(--cor-color-secundaria);
+    border-bottom:2px solid var(--cor-color-secundaria);
 }
 /* #services .container .row:only-child {
     text-align: right;
@@ -400,16 +421,15 @@ font-size:.7em;
     /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
     #tres-servicos hr{
-       border: var(--cor-color-secundaria) solid 2px;
-       width: 200px;
-       margin: 0 auto;
-   }
-   #tres-servicos h2 i{
+     border: #333 solid 2px;
+     width: 100px;
+     margin: 0 auto;
+ }
+ #tres-servicos h2 i{
     font-size: 26px;
 }
 #tres-servicos h2{
-    color: var(--cor-color-secundaria);
-    font-size: 26px;
+    color:#333;
     text-transform: uppercase;
     text-align: center;
     font-weight: 300;
@@ -454,12 +474,12 @@ font-size:.7em;
 }
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 #parceiros hr {
-    border: var(--cor-color-secundaria) solid 2px;
-    width: 200px;
+    border: #333 solid 2px;
+    width: 100px;
     margin: 0 auto;
 }
 #parceiros h2 {
-    color:var(--cor-color-secundaria);
+    color:#333;
     text-transform: uppercase;
 }
 #parceiros h2 i {
@@ -467,7 +487,7 @@ font-size:.7em;
 }
 #parceiros{
   width: 100%;
-  height: 200px;
+  height: 300px;
   text-align: center;
   padding-bottom: 10px;
   padding-top: 20px;
@@ -613,7 +633,7 @@ font-size:.7em;
 
 #footer .container-fluid .row:only-child p {
     color: #FFF;
-    font-size: .7em;
+    font-size: 12px;
     line-height: 26px;
 }
 
@@ -650,6 +670,8 @@ font-size:.7em;
     padding-top: 20px;
     padding-bottom: 20px;
     line-height: 35px;
+    border-top: 2px solid  var(--cor-color-secundaria);
+    border-bottom: 2px solid  var(--cor-color-secundaria);
 }
 
 #depoimentos .slick-depoimentos img {
@@ -671,7 +693,6 @@ font-size:.7em;
 
 #depoimentos h2 {
     color: #FFF;
-    font-size: 26px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 300;
@@ -679,8 +700,10 @@ font-size:.7em;
 
 #depoimentos hr {
     border: #FFF solid 2px;
-    width: 200px;
+    width: 100px;
     margin: 0 auto;
+    margin-bottom: 30px;
+
 }
 
 #depoimentos p {
@@ -724,9 +747,9 @@ font-size:.7em;
 }
 #fale-conosco hr {
     border: #FFF solid 2px;
-    width: 200px;
+    width: 100px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 #fale-conosco {
     background-image: url("../../assets/img/plateia-front.jpg");

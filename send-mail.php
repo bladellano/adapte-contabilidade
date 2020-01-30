@@ -55,7 +55,7 @@ $body = '<!DOCTYPE html>
 </html>';
 
 // $result = $email->send("bladellano@gmail.com",$_POST['email'],$_POST['nome'],"Formulário de Contato Portal",$body);
-$result = $email->send("diretor@paideiaeducacional.com",$_POST['email'],$_POST['nome'],"Formulário de Contato Portal",$body);
+$result = $email->send("diretor@adaptecontabilidade.com.br",$_POST['email'],$_POST['nome'],"Formulário de Contato Portal",$body);
 
 var_dump($result);
 

@@ -63,9 +63,9 @@
             let click = new Event("click");
             let fora = !burger.contains(e.target);
             if(fora && nav.classList.contains('nav-active'))
-             burger.dispatchEvent(click);                
+               burger.dispatchEvent(click);                
 
-     });
+       });
 
         const navSlide = () => {                    
 
@@ -126,6 +126,7 @@
 
 
         window.sr = ScrollReveal({reset: true});
+        
         sr.reveal('#footer .container-fluid .row .col-md-3', {
             delay: 400,
             scale: 0
@@ -142,5 +143,14 @@
             delay: 400,
             scale: 0
         });
+        sr.reveal('#tres-servicos .container .row > div:nth-of-type(n), .slick-parceiros, .slick-depoimentos, .wrap-content-form', {
+            delay: 400,
+            scale: 0
+        });
+        sr.reveal('#fale-conosco .row .col-md-6:nth-child(1)', {
+         delay: 375,
+         duration: 500,
+         reset: true
+     });
 
     })(document, window);

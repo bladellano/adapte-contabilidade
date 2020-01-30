@@ -94,25 +94,25 @@
      <div class="custom">
       <i class="fas fa-phone"></i>
       <h3>TELEFONES DE CONTATO</h3>
-      <h4>91 98360-4463 / 91 98208-4651</h4>
+      <h4>91  98863 2966</h4>
     </div>
   </div>
   <div class="col-md-3">
    <div class="custom">
      <i class="fas fa-envelope"></i>
      <h3>E-MAIL PARA CONTATO</h3>
-     <h4>diretor@paideiaeducacional.com</h4>
+     <h4>contato@adaptecontabilidade.com.br</h4>
    </div>
  </div>
 
  <div class="col-md-2 text-right">
-  <a href="https://www.facebook.com/paideiaeducacionalpa/" target="_blank" class="icon-socials">
+  <a href="#" target="_blank" class="icon-socials">
     <i class="fab fa-facebook-f"></i>
   </a>
-  <a href="https://www.instagram.com/paideiaeducacional/" target="_blank" class="icon-socials">
+  <a href="#" target="_blank" class="icon-socials">
     <i class="fab fa-instagram"></i>
   </a>
-  <a href="https://www.youtube.com/channel/UCENeiT9xC9E6REBOzli7a7A" target="_blank" class="icon-socials">
+  <a href="#" target="_blank" class="icon-socials">
     <i class="fab fa-youtube"></i>
   </a>
 
@@ -137,7 +137,7 @@
     <li class="efeito-hr"><a href="#sobre-nos">Sobre nós<hr></a></li>
     <li>
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
-      <a href="#">Serviços</a>
+      <a href="#">Contabilidade</a>
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
       <div class="sub-menu">
         <ul>
@@ -147,7 +147,7 @@
         </ul>
       </div>
     </li>
-    <li class="efeito-hr"><a href="#eventos">Eventos<hr></a></li>
+    <li class="efeito-hr"><a href="#parceiros">Parceiros<hr></a></li>
     <li class="efeito-hr"><a href="#depoimentos">Depoimentos<hr></a></li>
     <li class="efeito-hr"><a href="#fale-conosco">Fale Conosco<hr></a></li>
     <!-- <li><a class="btn btn-success" href="#" data-toggle="modal" data-target="#modalExemplo">CONSULTE-NOS</a></li> -->

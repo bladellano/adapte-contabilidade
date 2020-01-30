@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\Exception;
 require("vendor/autoload.php");
 
 define('SMTP_USER', 'contato@rosadesaroncolegio.com.br');
-// define('SMTP_USER', 'contato@paideiaeducacional.com');
+// define('SMTP_USER', 'contato@adaptecontabilidade.com.br');
 define('SMTP_PASS', 'nt1@2012');
 // define('SMTP_PASS', 'Admin2020!');
 define('SMTP_HOST', 'mail.rosadesaroncolegio.com.br');

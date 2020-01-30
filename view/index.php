@@ -14,14 +14,15 @@
 
  <div id="sobre-nos">
   <div class="container">
-   <h2><i class="far fa-building"></i> Sobre nós</h2>
+   <h2>Sobre nós</h2>
    <hr><br>
    <div class="row">
     <div class="col-md-6">
       <p class="small">O que fazemos?</p>
-      <h3>Assessoria e Consultoria em Projetos Educacionais e Empresariais</h3>    
-      <p>A Paideia Educacional é uma empresa de assessoria e consultoria na área de educação e empresarial formada por profissionais renomados na área, que atuaram no ensino superior, escolas na educação básica, profissionalizantes, técnicas, realizações de eventos educacionais e empresarias há mais de 15 anos, tendo exercido neste período diversas atividades e ocupando postos nas Instituições de Ensino, colhendo resultados positivos nos trabalhos realizados.
+      <h3>Assessoria e Consultoria em Contabilidade</h3>    
+      <p>A Adapt Contabilidade é uma empresa especializada na prestação de serviços nas áreas Contábil, Fiscal/Tributária, Administração de pessoal, Societária e Consultoria empresarial.
       </p>
+      <p>Nosso propósito é demonstrar de maneira prática ao empresário a importância da contabilidade para o seu negócio, para isso contamos com uma equipe de profissionais qualificados em cada área de atuação, com escritório inteiramente informatizado, pronto a integrar-se ao cliente, de modo rápido, eficiente e seguro.</p>
     </div>  
     <div class="col-md-6">
       <img src="assets/img/business.jpg" alt="Imagem Business" class="img-responsive">
@@ -110,7 +111,7 @@
 
 
 <div id="tres-servicos">
-  <h2><i class="fas fa-briefcase"></i> Serviços</h2>
+  <h2>Serviços</h2>
   <hr>
   <div class="container">
     <div class="row">
@@ -132,14 +133,23 @@
 </div>
 
 <div id="parceiros">
- <h2><i class="fas fa-briefcase"></i> Parceiros</h2>
- <hr>
- <div class="container">
-   <div class="your-class">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+  <h2>Parceiros</h2>
+  <hr>
+  <div class="container">
+
+   <div class="slick-parceiros">
+    <div><img src="assets/img/eagle-sports.png" alt=""></div>
+    <div><img src="assets/img/alba-logo.png" alt=""></div>
+    <div><img src="assets/img/burger-king-logo.png" alt=""></div>
+    <div><img src="assets/img/eagle-sports.png" alt=""></div>
+    <div><img src="assets/img/alba-logo.png" alt=""></div>
+    <div><img src="assets/img/burger-king-logo.png" alt=""></div>
+    <div><img src="assets/img/eagle-sports.png" alt=""></div>
+    <div><img src="assets/img/alba-logo.png" alt=""></div>
+    <div><img src="assets/img/burger-king-logo.png" alt=""></div>
+
   </div>
+
 </div>
 </div>
 
@@ -203,7 +213,7 @@
         <div id="video-institucional">
          <div class="container">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8Ac-RvmDWvs"></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iYma9_gpEUQ"></iframe>
           </div>
           <p>Saiba mais como nosso suporte humanizado é diferente das<br/> plataformas de contabilidade online.</p>
           <small>FALE DIRETAMENTE COM O NOSSO TIME ESPECIALIZADO DE SUPORTE!</small>
@@ -215,7 +225,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center"> <i class="fas fa-file-signature"></i> FALE CONOSCO</h2>
+              <h2 class="text-center">FALE CONOSCO</h2>
               <hr>
               <div class="row">
 
@@ -301,12 +311,12 @@
                 <div>
                   <img src="assets/img/sem-foto.jpg" alt="">
                   <p>Amélia Borralho</p>
-                  "Contra fatos não há argumentos. A competência deste grupo se revela a cada dia. Parabéns @paideiaeducacional."
+                  "Contra fatos não há argumentos. A competência deste grupo se revela a cada dia. Parabéns @adaptecontabilidade."
                 </div>
                 <div>      
                   <img src="assets/img/nayara.jpg" alt="">
                   <p>Naiara Afonso</p>
-                  "Parabéns a Paidéia por palestras maravilhosas e esclarecedoras. Amei! Quando será a próxima?"
+                  "Parabéns a Adapte Contabilidade por serviços maravilhosos e esclarecedoros. Amei! desejo todo sucesso do munto!"
                 </div>                   
               </div>  
             </div>
