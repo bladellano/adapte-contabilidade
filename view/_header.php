@@ -141,9 +141,14 @@
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
       <div class="sub-menu">
         <ul>
-          <li class="efeito-hr"><a href="assessoria">Assessoria<hr></a></li>
-          <li class="efeito-hr"><a href="consultoria">Consultoria<hr></a></li>
-          <li class="efeito-hr"><a href="cursos-on-line">Cursos on-line<hr></a></li>
+          <li class="efeito-hr"><a href="assessoria">Produtos e Afiliados<hr></a></li>
+          <li class="efeito-hr"><a href="consultoria">E-commerce<hr></a></li>
+          <li class="efeito-hr"><a href="cursos-on-line">Empresa de Serviços<hr></a></li>
+          <li class="efeito-hr"><a href="assessoria">Empresas de T.I<hr></a></li>
+          <li class="efeito-hr"><a href="consultoria">Advogados<hr></a></li>
+          <li class="efeito-hr"><a href="cursos-on-line">Engenheiros<hr></a></li>
+          <li class="efeito-hr"><a href="cursos-on-line">Microfranquias<hr></a></li>
+          <li class="efeito-hr"><a href="cursos-on-line">Profissionais Liberais<hr></a></li>
         </ul>
       </div>
     </li>
