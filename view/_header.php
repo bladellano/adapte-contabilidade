@@ -131,7 +131,7 @@
 
 <div class="head">
   <div class="nav-menu" id="nav">
-   <div class="logo-mobile"><img src="assets/img/logo_1.svg"></div>
+   <div class="logo-mobile"><img src="assets/img/logo-adapte-contabilidade-branco.png"></div>
    <ul class="nav-links">
     <li class="efeito-hr"><a href="./">Home<hr></a></li>
     <li class="efeito-hr"><a href="#sobre-nos">Sobre nós<hr></a></li>
