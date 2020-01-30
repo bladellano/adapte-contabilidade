@@ -1,0 +1,13 @@
+{
+    "name": "bladellano/site",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caio Silva",
+            "email": "bladellano@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.1"
+    }
+}
