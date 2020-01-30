@@ -4,9 +4,6 @@
      <div class="col-md-3">      
        <img class="logo-footer" src="assets/img/logo-adapte-contabilidade-branco.png" alt=""> 
        <p>Contato:<br/>
-        <!-- <i class="fas fa-phone"></i> (91) 9 8360 4463 | William Borralho<br/> -->
-        <!-- <i class="fas fa-phone"></i> (91) 9 8208 4651 | Rosangela Santos<br/> -->
-        <!-- <i class="fab fa-whatsapp"></i> -->
         <i class="fas fa-phone"></i> (91) 9 98863 2966  <br/>
         Horário de Funcionamento: Comercial<br/>
         Responsável pela empresa: Domingos</p>

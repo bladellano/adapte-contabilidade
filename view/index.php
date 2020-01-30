@@ -71,37 +71,34 @@
 
   <div class="container">   
     <div class="row">
-      <div class="col-lg-2 col-md-4 col-sm-4 col-6"></div>
 
-      <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+      <div class="col-md-3 col-sm-4 col-6">
         <a href="#">
           <i class="fas fa-dog"></i>
         </a>
         <p>PET</p>
       </div>
 
-      <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+      <div class="col-md-3 col-sm-4 col-6">
         <a href="#">
           <i class="fas fa-gavel"></i>
         </a>
         <p>ADV</p>
       </div>
 
-      <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+      <div class="col-md-3 col-sm-4 col-6">
         <a href="#">
          <i class="fas fa-user-nurse"></i>
        </a>
        <p>MED</p>
      </div>
 
-     <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+     <div class="col-md-3 col-sm-4 col-6">
       <a href="#">
         <i class="fas fa-user-tie"></i>
       </a>
       <p>MEI</p>
     </div>
-
-    <div class="col-lg-2 col-md-4 col-sm-4 col-6"></div>
 
   </div>
 </div><!--CONTAINER-->
