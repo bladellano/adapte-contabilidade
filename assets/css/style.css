@@ -1056,7 +1056,6 @@ h3.border-bottom.border-gray {
         body {
             overflow-x: hidden;
         }
-
         #video-institucional .embed-responsive{
             width: 98%;
         }
@@ -1078,8 +1077,8 @@ h3.border-bottom.border-gray {
             background-color: var(--cor-color-principal);
         }
         #links-services .container .row:only-child a {
-            width: 180px;
-            height: 1190px;
+            /*width: 178px;*/
+            /*height: 178px;*/
         }
         #services {
             text-align: center;
