@@ -436,7 +436,7 @@ body {
 }
 #tres-servicos{
     margin:0 auto;
-    height: 250px;
+    height: auto;
     background-image: url("../../assets/img/fundo-predios.jpg");
     background-position: center top;
     background-repeat: no-repeat;
@@ -688,6 +688,8 @@ body {
     font-style: italic;
     padding: 8px;
     line-height: 28px;
+    width: 94%;
+    margin: 0 auto;
     /* color:var(--cor-color-secundaria); */
 }
 
@@ -737,6 +739,11 @@ body {
 }
 #fale-conosco h2 i {
     font-size: 26px;
+}
+#fale-conosco .row .col-md-6:nth-child(1) h2,
+#fale-conosco .row .col-md-6:nth-child(1) p:nth-of-type(n)
+{
+    text-align: center!important;
 }
 #fale-conosco .row .col-md-6:nth-child(1) {
     line-height: 40px;
@@ -1049,22 +1056,22 @@ h3.border-bottom.border-gray {
         body {
             overflow-x: hidden;
         }
+        #video-institucional .embed-responsive{
+            width: 98%;
+        }
+        .wrap-content-form button{
+            left:33px;
+        }
+        #sobre-nos .row .col-md-6 p:nth-child(n),
+        #sobre-nos .row .col-md-6 h3{
+            text-align: center;
+        }
         .topo {
             background-color: transparent;
             border: 1px solid var(--cor-color-secundaria);
             color: var(--cor-color-secundaria);
             left: 10px;
             bottom: 18px;
-        /* width: 30px;
-            height: 30px;
-            color: #FFF;
-            text-align: center; 
-            position: fixed;
-            
-            padding-top: 2px;
-            cursor: pointer;
-            z-index: 4;
-            border-radius: 4px; */
         }
         .head .nav-menu {
             background-color: var(--cor-color-principal);
