@@ -1085,8 +1085,8 @@ h3.border-bottom.border-gray {
             background-color: var(--cor-color-principal);
         }
         #links-services .container .row:only-child a {
-            width: 148px;
-            height: 148px;
+            width: 128px;
+            height: 128px;
         }
         #services {
             text-align: center;
