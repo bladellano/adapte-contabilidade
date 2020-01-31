@@ -1067,7 +1067,8 @@ h3.border-bottom.border-gray {
             width: 98%;
         }
         .wrap-content-form button{
-            left:33px;
+            left:66px;
+            font-size: 14px;
         }
         #sobre-nos .row .col-md-6 p:nth-child(n),
         #sobre-nos .row .col-md-6 h3{
