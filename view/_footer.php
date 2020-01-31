@@ -101,21 +101,14 @@
       autoplaySpeed: 2000,
           responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 800,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-         centerMode: true,
-         slidesToShow: 2,
-         slidesToScroll: 2
-       }        
-     } 
+      }
+     
      ]
     });
 

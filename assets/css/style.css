@@ -421,11 +421,11 @@ body {
     /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
     #tres-servicos hr{
-     border: #333 solid 2px;
-     width: 100px;
-     margin: 0 auto;
- }
- #tres-servicos h2 i{
+       border: #333 solid 2px;
+       width: 100px;
+       margin: 0 auto;
+   }
+   #tres-servicos h2 i{
     font-size: 26px;
 }
 #tres-servicos h2{
@@ -499,12 +499,13 @@ body {
 }
 
 #links-services h5 {
-    color: var(--cor-color-secundaria);
-    font-size: 34px;
+    color: #333;
+    font-size: 2em;
     max-width: 700px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-weight: bold;
     
 }
 #links-services h2 {
@@ -548,19 +549,25 @@ body {
 #links-services .container .row .col-lg-2:nth-child(5) a{background-color: #A53692;}
 #links-services .container .row .col-lg-2:nth-child(6) a{background-color: #D63135;} */
 
-
-
+#links-services .container .row:only-child a:hover .fas {
+    font-size: 90px;
+}
+#links-services .container .row:only-child a:hover {
+   background-color: var(--cor-color-principal);
+   width: 164px;
+   height: 164px;
+}
 #links-services .container .row:only-child a {
-    width: 150px;
-    height: 150px;
+    width: 174px;
+    height: 174px;
     display: block;
     background-color: var(--cor-color-secundaria);
     border-radius: 50%;
     text-decoration: none;
     margin-top: 12px;
-    /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); */
     padding: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    margin:0 auto;
 }
 
 #links-services .container .row:only-child a .fas,

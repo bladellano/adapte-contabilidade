@@ -152,7 +152,7 @@
             delay: 400,
             scale: 0
         });
-        sr.reveal('#tres-servicos .container .row > div:nth-of-type(n), .slick-parceiros, .slick-depoimentos, .wrap-content-form', {
+        sr.reveal('#tres-servicos .container .row > div:nth-of-type(n), .slick-parceiros, .slick-depoimentos, .wrap-content-form, #links-services .container .row .col-md-3', {
             delay: 400,
             scale: 0
         });
