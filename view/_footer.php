@@ -50,11 +50,11 @@
 
 <h3>Ligamos para você</h3>
 <p>Deixe seu nome e número de telefone que ligamos para você.</p>
-<form action="">
-  <input type="text" class="form-control form-control-sm" placeholder="Nome:">
-  <input type="email" class="form-control form-control-sm" placeholder="E-mail:">
-  <input type="text" class="form-control form-control-sm" placeholder="Telefone:">
-  <button class="btn btn-danger btn-block btn-sm">ENVIAR</button>
+<form id="form-contato">
+  <input type="text" class="form-control form-control-sm" placeholder="Nome:" name="nome_">
+  <input type="email" class="form-control form-control-sm" placeholder="E-mail:" name="email_">
+  <input type="tel" class="form-control form-control-sm" placeholder="Telefone:" name="telefone_"> 
+  <button id="btn-contato" class="btn btn-danger btn-block btn-sm">ENVIAR</button>
 </form>
 
 

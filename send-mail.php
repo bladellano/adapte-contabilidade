@@ -3,7 +3,7 @@
 header("Content-type: application/json; charset=utf-8");
 
 require_once("class/Mail.php");
- 
+
 $email = new Mail();
 
 $body = '<!DOCTYPE html>
@@ -19,37 +19,25 @@ $body = '<!DOCTYPE html>
          <table border=0 width="650px" bgcolor="#FFF" 
             style="font-family: sans serif;box-shadow: 2px 2px 10px #CCC;border:1px solid #999">
             <tr>
-               <th align="center" bgcolor="#273c75" style="color:#FFF">
-                  <h3>FORMULÁRIO DE PROPOSTA ON-LINE</h3>
+               <th align="center" bgcolor="#D63031" style="color:#FFF">
+                  <h3>CONTATO ATRAVÉS DO PORTAL</h3>
                </th>
             </tr>
             <tr>
                <td>
                   <table width="100%" style="padding:20px">
                      <tr>
-                        <td  align="right" width="40%"><b>Serviço:</b></td>
-                        <td width="60%">'.$_POST['servico'].'</td>
+                        <td  align="right" width="40%"><b>Nome:</b></td>
+                        <td width="60%">'.$_POST['nome_'].'</td>
                      </tr>
                      <tr>
-                        <td  align="right" width="40%"><b>Cidade:</b></td>
-                        <td width="60%">'.$_POST['cidade'].'</td>
+                        <td  align="right" width="40%"><b>E-mail:</b></td>
+                        <td width="60%">'.$_POST['email_'].'</td>
                      </tr>
                      <tr>
-                        <td  align="right" width="40%"><b>O que a empresa faz:</b></td>
-                        <td width="60%">'.$_POST['area_atuacao'].'</td>
-                     </tr>
-                     <tr>
-                        <td  align="right" valign="top" width="40%"><b>Nome:</b></td>
-                        <td width="60%">'.$_POST['nome'].'</td>
-                     </tr>
-                     <tr>
-                        <td  align="right" valign="top" width="40%"><b>E-mail:</b></td>
-                        <td width="60%">'.$_POST['email'].'</td>
-                     </tr>
-                     <tr>
-                        <td  align="right" valign="top" width="40%"><b>Telefone:</b></td>
-                        <td width="60%">'.$_POST['telefone'].'</td>
-                     </tr>
+                        <td  align="right" width="40%"><b>Telefone:</b></td>
+                        <td width="60%">'.$_POST['telefone_'].'</td>
+                     </tr>              
                   </table>
                </td>
             </tr>
@@ -67,6 +55,6 @@ $body = '<!DOCTYPE html>
    </body>
 </html>';
 
-$result = $email->send("bladellano@yahoo.com.br",$_POST['email'],$_POST['nome'],"FORMULÁRIO PROPOSTA ON-LINE",$body);
+$result = $email->send("bladellano@yahoo.com.br",$_POST['email_'],$_POST['nome_'],"CONTATO ATRAVÉS DO PORTAL",$body);
 
 echo json_encode($result);

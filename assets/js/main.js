@@ -3,7 +3,7 @@
     'use strict';
 
     /* MASCARA PARA O CAMPO TELEFONE */
-    $('input[name="telefone"]').mask('(00) 00000-0000');
+    $('input[name="telefone"],input[name="telefone_"]').mask('(00) 00000-0000');
 
     /* VALIDAÇÃO DE FORMULÁRIO SERVIÇOS */
 
@@ -19,15 +19,15 @@
         });
 
         if (aVazios.length) {
-            let ar = aVazios.length > 1 ? '(S)' : '';
-            return alertify.error(`PREENCHA CORRETAMENTE O${ar} CAMPO${ar} ${aVazios.join(', ').toUpperCase()}.`);
+            let s = aVazios.length > 1 ? '(S)' : '';
+            return alertify.error(`PREENCHA CORRETAMENTE O${s} CAMPO${s} ${aVazios.join(', ').toUpperCase()}.`);
         }
 
         let camposForm = $('#form-contato-adapte :input');
 
         $.ajax({
             type: "POST",
-            url: "send-mail.php",
+            url: "send-mail-proposta.php",
             data: data,
             dataType: "json",
             beforeSend: function() {
@@ -47,7 +47,7 @@
 
     /* VALIDAÇÃO DE FORMULÁRIO */
 
-    $('.form-contato').submit(function(e) {
+    $('#form-contato').submit(function(e) {
         e.preventDefault();
 
         const data = $(this).serializeArray();
@@ -55,10 +55,9 @@
         const pattEmail = /^[a-z0-9.|_]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/g;
         const pattName = /\D\w/g;
 
-        const email = $('input[name="email"]').val();
-        const name = $('input[name="nome"]').val();
-        const telefone = $('input[name="telefone"]').val();
-        const mensagem = $('textarea[name="mensagem"]').val();
+        const email = $('input[name="email_"]').val();
+        const name = $('input[name="nome_"]').val();
+        const telefone = $('input[name="telefone_"]').val();
 
         if (!pattName.test(name))
             return alertify.error('Preencha o corretamente o campo nome.');
@@ -66,19 +65,19 @@
             return alertify.error('Preencha o corretamente o campo e-mail.');
         if (telefone.length == 0)
             return alertify.error('Preencha corretamente o campo telefone');
-        if (mensagem.length == 0)
-            return alertify.error('Preencha o campo mensagem.');
 
-        $('.form-contato :input').attr('disabled', 'disabled');
-        $('button[type="submit"]').text('ENVIANDO...');
+
+        $('#form-contato :input').attr('disabled', 'disabled');
+        $('#btn-contato').text('ENVIANDO...');
 
         $.post("send-mail.php", data, function(data, status) {
             if (status == "success") {
-                $('.form-contato :input').attr('disabled', false);
-                $('button[type="submit"]').text('ENVIAR');
+                $('#form-contato :input').attr('disabled', false);
+                $('#btn-contato').text('ENVIAR');
                 alertify.success('E-mail enviado com sucesso!');
             }
         });
+
         return $(this)[0].reset();
 
     });

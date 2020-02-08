@@ -3,6 +3,8 @@
 <!-- CAROUSEL -->
 <div id="owl-demo" class="owl-carousel owl-theme">
 
+  <!-- <div class="item"><img src="assets/img/banner-06.jpg" alt=""></div> -->
+  <div class="item"><img src="assets/img/banner-04.jpg" alt=""></div>
   <div class="item"><img src="assets/img/banner-01.jpg" alt=""></div>
   <div class="item"><img src="assets/img/banner-02.jpg" alt=""></div>
   <!-- <div class="item"><img src="assets/img/banner-03.jpg" alt=""></div> -->
@@ -25,7 +27,7 @@
       <p>Nosso propósito é demonstrar de maneira prática ao empresário a importância da contabilidade para o seu negócio, para isso contamos com uma equipe de profissionais qualificados em cada área de atuação, com escritório inteiramente informatizado, pronto a integrar-se ao cliente, de modo rápido, eficiente e seguro.</p>
     </div>
     <div class="col-md-6">
-      <img src="assets/img/business.jpg" alt="Imagem Business" class="img-responsive">
+      <img src="assets/img/35.jpg" alt="Imagem Business" class="img-responsive">
     </div>
   </div>
 
