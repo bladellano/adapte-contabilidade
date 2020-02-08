@@ -153,7 +153,7 @@
     </li>
     <li class="efeito-hr"><a href="#parceiros">Parceiros<hr></a></li>
     <li class="efeito-hr"><a href="#depoimentos">Depoimentos<hr></a></li>
-    <li class="efeito-hr"><a href="#fale-conosco">Fale Conosco<hr></a></li>
+    <li class="efeito-hr"><a href="#footer">Fale Conosco<hr></a></li>
     <!-- <li><a class="btn btn-success" href="#" data-toggle="modal" data-target="#modalExemplo">CONSULTE-NOS</a></li> -->
     <li><a class="btn btn-danger" href="#fale-conosco">PROPOSTA ONLINE</a></li>
   </ul>
