@@ -1,24 +1,24 @@
-<div id="footer"> 
-  <div class="container-fluid"> 
-    <div class="row">      
-     <div class="col-md-3">      
-       <img class="logo-footer" src="assets/img/logo-adapte-contabilidade-branco.png" alt=""> 
+<div id="footer">
+  <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-3">
+       <img class="logo-footer" src="assets/img/logo-adapte-contabilidade-branco.png" alt="">
        <p>Contato:<br/>
         <i class="fas fa-phone"></i> (91) 9 98863 2966  <br/>
         Horário de Funcionamento: Comercial<br/>
         Responsável pela empresa: Domingos</p>
-      <p><i class="fas fa-map-pin"></i> Endereço Rua São Jorge número 63 | Cep: 66645-120 | Castanheira - Belém - Pará </p>      
-      <p><i class="fas fa-envelope"></i> contato@adaptecontabilidade.com.br</p>      
+      <p><i class="fas fa-map-pin"></i> Endereço Rua São Jorge número 63 | Cep: 66645-120 | Castanheira - Belém - Pará </p>
+      <p><i class="fas fa-envelope"></i> contato@adaptcontabilidade.com.br</p>
 
       <a href="#" target="_blank" class="icon-socials">
         <i class="fab fa-facebook-f"></i>
       </a>
       <a href="#" target="_blank" class="icon-socials">
         <i class="fab fa-instagram"></i>
-      </a> 
+      </a>
       <a href="#" target="_blank" class="icon-socials">
         <i class="fab fa-youtube"></i>
-      </a> 
+      </a>
 
     </div>
     <div class="col-md-3 d-none d-sm-block">
@@ -30,7 +30,7 @@
         <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
       </ul>
     </div>
-    <div class="col-md-3 d-none d-sm-block">      
+    <div class="col-md-3 d-none d-sm-block">
       <h3>Institucional</h3>
       <ul>
         <li><a href="#">Inicial</a></li>
@@ -41,7 +41,7 @@
         <li><a href="#">Orçamento</a></li>
         <li><a href="#">Fale Conosco</a></li>
       </ul></div>
-      <div class="col-md-3 d-none d-sm-block">  
+      <div class="col-md-3 d-none d-sm-block">
 
 
 <!--         <div class="fb-page" data-href="https://www.facebook.com/paideiaeducacionalpa/" data-tabs="timeline" data-width="" data-height="460px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/paideiaeducacionalpa/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/paideiaeducacionalpa/">Paideia Educacional</a></blockquote>
@@ -50,31 +50,31 @@
 
 <h3>Ligamos para você</h3>
 <p>Deixe seu nome e número de telefone que ligamos para você.</p>
-<form action="">           
+<form action="">
   <input type="text" class="form-control form-control-sm" placeholder="Nome:">
   <input type="email" class="form-control form-control-sm" placeholder="E-mail:">
-  <input type="text" class="form-control form-control-sm" placeholder="Telefone:"> 
-  <button class="btn btn-danger btn-block btn-sm">ENVIAR</button> 
+  <input type="text" class="form-control form-control-sm" placeholder="Telefone:">
+  <button class="btn btn-danger btn-block btn-sm">ENVIAR</button>
 </form>
 
 
 </div>
-</div>   
 </div>
 </div>
-<!-- 
+</div>
+
 <div id="assign">
   <div class="container">
-    © FireFly. 2019 Paideia Educacional. Todos os direitos reservados.
+    © FireFly. <?=date('Y')?> Adapt Contabilidade. Todos os direitos reservados.
     <br/>Desenvolvimento by <a href="https://api.whatsapp.com/send?phone=5591982650277" target="_blank">
       <img data-toggle="tooltip" data-placement="top" title="Contato: (91) 98265-0277" src="assets/img/fire-logo.png" alt="Logo FireFly">
     </a></div>
   </div>
--->
+
 </section>
 
-<div class="topo">    
-  <i class="fas fa-arrow-up"></i>
+<div class="topo">
+  <i class="fas fa-chevron-up"></i>
 </div>
 
 <script src="lib/jquery/jquery.js"></script>
@@ -94,7 +94,7 @@
 
     $('.slick-parceiros').slick({
       infinite: true,
-      slidesToShow: 6,    
+      slidesToShow: 6,
       // centerMode: true,
       arrows:false,
       autoplay: true,
@@ -107,38 +107,12 @@
           slidesToScroll: 2,
           infinite: true,
         }
-      }
-     
-     ]
+      }]
     });
 
     $('.slick-depoimentos').slick({
       autoplay:true
     });
-
-    $('.slick-eventos').slick({ 
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll:3,
-      responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-         centerMode: true,
-         slidesToShow: 1,
-         slidesToScroll: 1
-       }        
-     } 
-     ]
-   });  
 
     $('[data-toggle="tooltip"]').tooltip()
 

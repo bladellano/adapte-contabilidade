@@ -15,7 +15,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>.: Adapte Contabilidade :.</title>
+  <title>.: Adapt Contabilidade :.</title>
 
   <meta name="author" content="FireFly Desenvolvimento">
   <meta name="description" content="A Melhor Tecnologia em Site para Escritórios de Contabilidade com Atualizações Diárias, Tenha um Escritório Virtual.  0800 337 3376.">
@@ -47,7 +47,11 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0"></script>
 
 <body>
-  <!-- Modal -->
+
+<script type="text/javascript">function add_chatinline(){var hccid=24001066;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+add_chatinline(); </script>
+
+  <!-- MODAL -->
   <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -68,9 +72,6 @@
     </div>
   </div>
 
-
-
-
   <div class="container">
 
     <div class="row linha-top">
@@ -84,11 +85,7 @@
       </a>
      </div>
      <div class="col-md-1">
- <!--       <div class="custom">
-        <i class="fas fa-map-marker-alt"></i>
-        <h3>ENDEREÇO</h3>
-        <h4>Av. Gentil Bittencourt 0000.</h4>
-      </div> -->
+
     </div>
     <div class="col-md-3">
      <div class="custom">
@@ -101,7 +98,7 @@
    <div class="custom">
      <i class="fas fa-envelope"></i>
      <h3>E-MAIL PARA CONTATO</h3>
-     <h4>contato@adaptecontabilidade.com.br</h4>
+     <h4>contato@adaptcontabilidade.com.br</h4>
    </div>
  </div>
 
@@ -133,28 +130,27 @@
    <ul class="nav-links">
     <li class="efeito-hr"><a href="./">Home<hr></a></li>
     <li class="efeito-hr"><a href="#sobre-nos">Sobre nós<hr></a></li>
-    
+
     <li class="titulo-submenu"> <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
       <a >Contabilidade</a>
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
       <div class="sub-menu">
         <ul>
-          <li class="efeito-hr"><a href="assessoria">Produtos e Afiliados<hr></a></li>
-          <li class="efeito-hr"><a href="consultoria">E-commerce<hr></a></li>
-          <li class="efeito-hr"><a href="cursos-on-line">Empresa de Serviços<hr></a></li>
-          <li class="efeito-hr"><a href="assessoria">Empresas de T.I<hr></a></li>
-          <li class="efeito-hr"><a href="consultoria">Advogados<hr></a></li>
-          <li class="efeito-hr"><a href="cursos-on-line">Engenheiros<hr></a></li>
-          <li class="efeito-hr"><a href="cursos-on-line">Microfranquias<hr></a></li>
-          <li class="efeito-hr"><a href="cursos-on-line">Profissionais Liberais<hr></a></li>
+          <li class="efeito-hr"><a href="abrir-empresas">Abrir Empresas<hr></a></li>
+          <li class="efeito-hr"><a href="migrar-empresas">Migrar Empresas<hr></a></li>
+          <li class="efeito-hr"><a href="regularizar-empresa">Regularizar Empresa<hr></a></li>
+          <li class="efeito-hr"><a href="empresas-de-ti">Empresas de T.I<hr></a></li>
+          <li class="efeito-hr"><a href="pet">Pet<hr></a></li>
+          <li class="efeito-hr"><a href="advogados">Advogados<hr></a></li>
+          <li class="efeito-hr"><a href="medicos">Médicos<hr></a></li>
+          <li class="efeito-hr"><a href="mei">MEI<hr></a></li>
         </ul>
       </div>
     </li>
     <li class="efeito-hr"><a href="#parceiros">Parceiros<hr></a></li>
     <li class="efeito-hr"><a href="#depoimentos">Depoimentos<hr></a></li>
     <li class="efeito-hr"><a href="#footer">Fale Conosco<hr></a></li>
-    <!-- <li><a class="btn btn-success" href="#" data-toggle="modal" data-target="#modalExemplo">CONSULTE-NOS</a></li> -->
     <li><a class="btn btn-danger" href="#fale-conosco">PROPOSTA ONLINE</a></li>
   </ul>
 
