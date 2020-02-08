@@ -1,10 +1,5 @@
 (function(doc, win) {
-    $('[name=cidade] option[value="Ananindeua"]').prop('selected', true);
-    $('[name=servico] option[value="PET"]').prop('selected', true);
-    $('[name=area_atuacao] option[value="Engenharia"]').prop('selected', true);
-    $('[name=email]').val('caio@gmail.com');
-    $('[name=nome]').val('Caio Silva');
-    $('[name=telefone]').val('(91)99999-9999');
+
     'use strict';
 
     /* MASCARA PARA O CAMPO TELEFONE */
