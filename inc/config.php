@@ -1,11 +1,15 @@
 <?php 	
 
+
+
+echo '<pre>'; print_r($_SERVER); echo '</pre>';
+
 class Sql {
 
 	public $conn;
 
 	public function __construct(){
-		return $this->conn = mysqli_connect("localhost","admin","","dbphp7");
+		return $this->conn = mysqli_connect("localhost","admin","","db_adapt");
 	}
 
 	public function query($string_query){

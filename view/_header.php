@@ -52,7 +52,7 @@
 add_chatinline(); </script>
 
   <!-- MODAL -->
-  <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="modalNoticia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -62,7 +62,7 @@ add_chatinline(); </script>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="show-conteudo"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -72,8 +72,9 @@ add_chatinline(); </script>
     </div>
   </div>
 
-  <div class="container">
 
+
+  <div class="container">
     <div class="row linha-top">
       <div class="col-md-12 text-right">
       </div>

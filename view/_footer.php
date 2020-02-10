@@ -6,7 +6,7 @@
        <p>Contato:<br/>
         <i class="fas fa-phone"></i> (91) 9 98863 2966  <br/>
         Horário de Funcionamento: Comercial<br/>
-        Responsável pela empresa: Domingos</p>
+      Responsável pela empresa: Domingos</p>
       <p><i class="fas fa-map-pin"></i> Endereço Rua São Jorge número 63 | Cep: 66645-120 | Castanheira - Belém - Pará </p>
       <p><i class="fas fa-envelope"></i> contato@adaptcontabilidade.com.br</p>
 
@@ -24,10 +24,16 @@
     <div class="col-md-3 d-none d-sm-block">
       <h3>Notícias</h3>
       <ul>
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+        <?php 
+
+        foreach ($data['noticias'] as $noticia):
+        extract($noticia);
+        ?>
+        <li><a href="#" data-toggle="modal" data-target="#modalNoticia" data-id="<?=$idNoticia?>"><?=$tituloNoticia?></a></li>
+        <?php
+        endforeach;        
+        ?>
+
       </ul>
     </div>
     <div class="col-md-3 d-none d-sm-block">
@@ -99,7 +105,7 @@
       arrows:false,
       autoplay: true,
       autoplaySpeed: 2000,
-          responsive: [
+      responsive: [
       {
         breakpoint: 800,
         settings: {
