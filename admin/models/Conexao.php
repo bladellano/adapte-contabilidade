@@ -1,14 +1,26 @@
 <?php 
 
+switch ($_SERVER['SERVER_NAME']) {
+	case "localhost":
+		define("HOST","127.0.0.1");
+		define("USER","admin");
+		define("PASS","");
+		define("DBNAME","db_adapt");
+	break;	
+	default:
+		define("HOST","mysql873.umbler.com");
+		define("USER","root_adapt");
+		define("PASS","s672lUKGr*(2");
+		define("DBNAME","db_adapt");
+	break;
+}
+
 class Conexao {
 
 	protected $db;
-
 	protected $table;
-
-	protected $lines_per_page = 8; // Quantidade de registros por página.
-
-	protected $line_size = 5; // Quantidade de numeros para listar item-página.
+	protected $lines_per_page = 8; // QUANTIDADE DE REGISTROS POR PÁGINA.
+	protected $line_size = 5; // QUANTIDADE DE NUMEROS PARA LISTAR ITEM-PÁGINA.
 
 	const pasta = "upload/";
 
@@ -21,10 +33,10 @@ class Conexao {
 	private function conectar(){
 		try {	 
 
-			$host = 'localhost';
-			$dbname = 'db_adapt';
-			$user = 'admin';
-			$pass = '';
+			$host = HOST;
+			$user = USER;
+			$pass = PASS;
+			$dbname = DBNAME;
 
 			$con = new PDO("mysql:host={$host};dbname={$dbname}",$user,$pass);
 			$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

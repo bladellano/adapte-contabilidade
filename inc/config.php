@@ -1,15 +1,26 @@
 <?php 	
 
-
-
-echo '<pre>'; print_r($_SERVER); echo '</pre>';
+switch ($_SERVER['SERVER_NAME']) {
+	case "localhost":
+		define("HOST","127.0.0.1");
+		define("USER","admin");
+		define("PASS","");
+		define("DBNAME","db_adapt");
+	break;	
+	default:
+		define("HOST","mysql873.umbler.com");
+		define("USER","root_adapt");
+		define("PASS","s672lUKGr*(2");
+		define("DBNAME","db_adapt");
+	break;
+}
 
 class Sql {
 
 	public $conn;
 
 	public function __construct(){
-		return $this->conn = mysqli_connect("localhost","admin","","db_adapt");
+		return $this->conn = mysqli_connect(HOST,USER,PASS,DBNAME);
 	}
 
 	public function query($string_query){
