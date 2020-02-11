@@ -197,19 +197,20 @@ body {
 /* PERSONALIZANDO BOTÃO SUBIR TOPO */
 
 .topo {
-    background-color: #0275D8;
+    background-color: rgba(0,0,0,.5);
     width: 40px;
     height: 40px;
     color: #FFF;
     text-align: center;
-    position: fixed;
-    right: 50%;
-    bottom: 60px;
     padding-top: 2px;
     cursor: pointer;
     z-index: 4;
     border-radius: 50%;
     font-size: 20px;
+    position: fixed;
+    bottom: 40px;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -1045,22 +1046,26 @@ h3.border-bottom.border-gray {
     display: block;
     position: absolute;
     background: var(--cor-color-principal);
-    margin-top: 10px;
+    margin-top: 12px;
     margin-left: -15px;
 }
 
 .nav-links li:hover .sub-menu ul li {
-    display: block;
-    width: 200px;
-    padding: 10px;
+    display: inline-block;
+    width: 30%;
+    padding: 15px;
     border-radius: 0;
-    text-align: left;
+    text-align: left;  
 }
 
 .nav-links li:hover .sub-menu ul li:last-child {
     border-bottom: none;
 }
-
+.submenu ul li {/* COLOCA OS SUB ITENS UM DO LADO DO OUTRO */    
+    width: 50%;
+    height: 50px;
+    overflow: hidden;
+}
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 

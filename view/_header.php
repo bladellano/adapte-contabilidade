@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
-  <!-- GLOBAL SITE TAG (GTAG.JS) - GOOGLE ANALYTICS -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156612719-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-156612719-1');
-  </script>
+ 
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,8 +39,14 @@
 
 <body>
 
+<!-- SCRIPT MYLIVECHAT -->
 <script type="text/javascript">function add_chatinline(){var hccid=24001066;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
 add_chatinline(); </script>
+
+<!-- BOTÃO DO WHATSAPP -->
+<a href="https://api.whatsapp.com/send?l=pt&phone=5591988632966" target="_blank">
+  <img src="assets/img/whatsapp.png" style="position:fixed; bottom: 48px; right: 25px; z-index:99999;">
+</a>
 
   <!-- MODAL -->
   <div class="modal fade" id="modalNoticia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -125,6 +122,7 @@ add_chatinline(); </script>
   <div id="whatsapp"><a href="https://api.whatsapp.com/send?phone=5591981769979" target="_blank" class="fab fa-whatsapp"></a></div>
 </div> -->
 
+ 
 <div class="head">
   <div class="nav-menu" id="nav">
    <div class="logo-mobile"><img src="assets/img/logo-adapte-contabilidade-branco.png"></div>
@@ -134,18 +132,25 @@ add_chatinline(); </script>
 
     <li class="titulo-submenu"> <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
-      <a >Contabilidade</a>
+      <a >Especialidade</a>
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
       <div class="sub-menu">
         <ul>
-          <li class="efeito-hr"><a href="abrir-empresas">Abrir Empresas<hr></a></li>
-          <li class="efeito-hr"><a href="migrar-empresas">Migrar Empresas<hr></a></li>
-          <li class="efeito-hr"><a href="regularizar-empresa">Regularizar Empresa<hr></a></li>
-          <li class="efeito-hr"><a href="empresas-de-ti">Empresas de T.I<hr></a></li>
-          <li class="efeito-hr"><a href="pet">Pet<hr></a></li>
-          <li class="efeito-hr"><a href="advogados">Advogados<hr></a></li>
-          <li class="efeito-hr"><a href="medicos">Médicos<hr></a></li>
-          <li class="efeito-hr"><a href="mei">MEI<hr></a></li>
+          <li class="efeito-hr"><a href="advogados">&raquo; Advogados<hr></a></li>
+          <li class="efeito-hr"><a href="arquitetos">&raquo; Arquitetos<hr></a></li>
+          <li class="efeito-hr"><a href="abrir-empresas">&raquo; Abrir Empresas<hr></a></li>
+          <li class="efeito-hr"><a href="empregador-domestico">&raquo; Empregador Doméstico<hr></a></li>
+          <li class="efeito-hr"><a href="engenheiros">&raquo; Engenheiros<hr></a></li>
+          <li class="efeito-hr"><a href="escolas">&raquo; Escolas<hr></a></li>
+          <li class="efeito-hr"><a href="empresas-de-ti">&raquo; Empresas de T.I<hr></a></li>
+          <li class="efeito-hr"><a href="migrar-empresas">&raquo; Migrar Empresas<hr></a></li>
+          <li class="efeito-hr"><a href="medicos">&raquo; Médicos<hr></a></li>
+          <li class="efeito-hr"><a href="mei">&raquo; MEI<hr></a></li>
+          <li class="efeito-hr"><a href="salao-de-beleza">&raquo; Salão de beleza<hr></a></li>
+          <li class="efeito-hr"><a href="pet">&raquo; PET<hr></a></li>
+          <li class="efeito-hr"><a href="profissionais-liberais">&raquo; Profissionais Liberais<hr></a></li>
+          <li class="efeito-hr"><a href="representante-comerciais">&raquo; Representantes Comerciais<hr></a></li>
+          <li class="efeito-hr"><a href="regularizar-empresa">&raquo; Regularizar Empresa<hr></a></li>
         </ul>
       </div>
     </li>
