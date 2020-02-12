@@ -2,11 +2,41 @@
     min-height: 100%;
     position: relative;
   }  
- 
+  .btn-show-details{
+    padding: 2px;
+    color: #FFF;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+  }
+  .btn-show-details:before{s
+    font-family: "FontAwesome";
+    content: "\f078";
+    opacity: 0.4;
+    margin-left: 4px;
+  } 
+  .show-details-active{
+    opacity: 1!important;
+  }
+  .show-details{
+    opacity: 0;
+    transition: .2s;
+    border: 1px solid #CCC;
+    padding: 4px;
+    font-size: 12px;
+    width: 140px;
+    top: -25px;
+    position: relative;
+  }
+  .navbar-dark .navbar-nav .nav-link{
+    background: #777;
+    border-radius: 4px;
+    margin-left: 4px;
+  }
+
   .box-link:hover{
     text-decoration: none;
     color: #FFF;
-    border:3px solid #CCC;
   }
   .box-link{
     transition:.3s;
@@ -19,7 +49,7 @@
     color:#CCC;
     display: inline-block;
   }
-  /*Estilo para o loading do upload de fotos*/
+  /*ESTILO PARA O LOADING DO UPLOAD DE FOTOS*/
   #wait{    
     display:none; 
     position:absolute;
@@ -57,7 +87,6 @@
     background-color:#fff;
     display: none;
     position: absolute;
-    /*left: 350px;*/
     border: 1px solid #666;
     padding: 2px;
     box-shadow: 2px 2px 10px #444;

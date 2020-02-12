@@ -1,8 +1,8 @@
-  <!-- Begin Navbar -->
+  <!-- BEGIN NAVBAR -->
   <div id="nav">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i></a>
+        <a class="navbar-brand" href="#"><i class="fa fa-cogs" aria-hidden="true"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,32 +32,12 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="../sair.php">Sair</a>
-                <!-- <a class="dropdown-item" href="#">Outra ação</a> -->
-                <!-- <a class="dropdown-item" href="#">Algo mais aqui</a> -->
               </div>
             </li>
           </ul>
         </div>
-      </div> <!--container-->
+      </div> <!--CONTAINER-->
     </nav>
-
-
-
-
-
-<!-- 
-      <li><a href="noticias.php"> Notícia</a></li>
-          <li><a href="fotos.php"> Fotos</a></li>
-          <li><a href="videos.php"> Videos</a></li>
-          <li><a href="albuns.php"> Album</a></li>
-          <li><a href="membros.php"> Membros</a></li> -->
-
-
-
-
-
-
-
-        </div>
+  </div>
 
 

@@ -1,21 +1,62 @@
  <?php 
  require_once "_header.php";
  require_once "menu.php"; 
- ?>
+ ?> 
  <div class="container">
- 	Seja bem-vindo <strong><?=$_SESSION['Usuario']['nome']?>.</strong> 	
- 	<?php 
- 	// echo '<pre>'; print_r($_SESSION); echo '</pre>'; 	
- 	?>
+ 	<div class="breadcrumb"> 		
+ 	Seja bem-vindo(a) <strong> <?=$_SESSION['Usuario']['nome']?>.</strong> 	
+ 	</div>
 
  	<div class="row">
- 		<div class="col-md-2"><a href="#" class="box-link" style="background:#2ECC71">Mylivechat</a></div>
- 		<div class="col-md-2"><a href="#" class="box-link" style="background:#3498DB">Instagram</a></div>
- 		<div class="col-md-2"><a href="#" class="box-link" style="background:#8E44AD">Youtube</a></div>
- 		<div class="col-md-2"><a href="#" class="box-link" style="background:#E67E22">Facebook</a></div>
- 		<div class="col-md-2"><a href="#" class="box-link" style="background:#C0392B">Analytics</a></div>
- 		<div class="col-md-2"><a href="#" class="box-link" style="background:#F39C12">Webmail</a></div>
+ 		<div class="col-md-2"><a href="https://mylivechat.com/dashboard/welcome.ascx" target="_blank" class="box-link" style="background:#2ECC71"><i class="fa fa-comments-o" aria-hidden="true"></i> Mylivechat</a>
+ 			<span class="btn-show-details"></span>
+ 			<div class="show-details">
+ 				<b>Usuário:</b><br> adaptcontabilidade@gmail.com<br>
+ 				<b>Senha:</b><br>xRlKq#u^bx
+ 			</div> 
+ 		</div>
+ 		<div class="col-md-2"><a href="https://mail.google.com" target="_blank" class="box-link" style="background:#3498DB"><i class="fa fa-envelope-o" aria-hidden="true"></i> Gmail</a>
+ 			<span class="btn-show-details"></span>
+ 			<div class="show-details">
+ 				<b>Usuário:</b><br> adaptcontabilidade@gmail.com<br>
+ 				<b>Senha:</b><br>xRlKq#u^bx
+ 			</div> 
+ 		</div>
+ 		<div class="col-md-2"><a href="#" target="https://www.youtube.com/" target="_blank" class="box-link" style="background:#8E44AD"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a>
+ 			<span class="btn-show-details"></span>
+ 			<div class="show-details">
+ 				<b>Usuário:</b><br> adaptcontabilidade@gmail.com<br>
+ 				<b>Senha:</b><br>xRlKq#u^bx
+ 			</div> 
+ 		</div>
+ 		<div class="col-md-2"><a href="http://facebook.com/" target="_blank" class="box-link" style="background:#E67E22"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+ 			<span class="btn-show-details"></span>
+ 			<div class="show-details">
+ 				<b>Usuário:</b><br> adaptcontabilidade@gmail.com<br>
+ 				<b>Senha:</b><br>xRlKq#u^bx
+ 			</div> 
+ 		</div>
+ 		<div class="col-md-2"><a href="https://analytics.google.com/analytics/web/" target="_blank" class="box-link" style="background:#C0392B"><i class="fa fa-line-chart" aria-hidden="true"></i> Analytics</a>
+ 			<span class="btn-show-details"></span>
+ 			<div class="show-details">
+ 				<b>Usuário:</b><br> adaptcontabilidade@gmail.com<br>
+ 				<b>Senha:</b><br>xRlKq#u^bx
+ 			</div> 
+ 		</div>
+ 		<div class="col-md-2"><a href="https://webmail.umbler.com/" target="_blank" class="box-link" style="background:#F39C12"><i class="fa fa-envelope" aria-hidden="true"></i> Webmail</a>
+ 			<span class="btn-show-details"></span>
+ 			<div class="show-details">
+ 				<b>Usuário:</b><br> contato@adaptcontabilidade.com.br<br>
+ 				<b>Senha:</b><br>#vO?Pm5{,9
+ 			</div> 
+ 		</div>
  	</div>
  </div>
  <?php require_once "_footer.php" ?>
- 
+
+ <script>
+ 	$(function(){
+
+ 	
+ 	});
+ </script>

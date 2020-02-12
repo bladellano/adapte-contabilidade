@@ -1,65 +1,70 @@
 $(function () {
 
-/* VERIFICA EM QUE PÁGINA ESTA ATUALMENTE E ADICIONA A CLASSE ACTIVE.*/
-var url = window.location.href,
-aNamePag = url.split('/'), 
-sizeArray = aNamePag.length,
-pag = aNamePag[(sizeArray-1)];
-$('.nav-link').each(function(i,e){
-    if($(this).attr('href') == pag){
-        $( ".nav-link[href='"+ pag +"']" ).addClass("active");
-    }
-});
+    /* MOSTRA DETALHES COMO USUARIO E SENHA DO BOX NA TELA INICIAL DO ADMIN.*/
+    $('.btn-show-details').click(function(e) {
+        $(this).next().toggleClass('show-details-active');
+    });
 
-/* MARCAR E DESMARCAR TODOS OS ÍTENS*/
-$('#chkCdNoticia').click(function(event) {
-    event.preventDefault();
-    var inputCheck = $('input[type=checkbox]#chkCdNoticia');
-    if(inputCheck.not(':checked').length == 0){
-        inputCheck.prop('checked', false);
-        return false;
-    } else {
-        inputCheck.prop('checked', true);
-    }
-});
-
-
-/*FUNÇÃO PARA APAGAR VÁRIOS ITENS DE UMA VEZ*/
-$('#btApagarItem').click(function(event) {
-   if($('input[id=chkCdNoticia]:checkbox:checked').length == 0) {
-    alertify.error('Selecione pelo menos uma foto!');
-    return false;
-}  
-
-var val= [];
-
-$('input[id=chkCdNoticia]:checkbox:checked').each(function (i) {
-    val[i] = $(this).val();
-});
-
-var dados = val;
-
-alertify.confirm('Alerta!', 'Deseja realmente excluir?', function(){ 
-
-  $.ajax({
-    url: '../excluir-foto.php',
-    type: 'POST',
-    dataType: 'html',
-    data: {dados},
-    success: function(r){             
-        if(r == true){
-            alertify.success('Excluído com sucesso!');
-            setTimeout(function () {
-                location.reload();
-            }, 1500);
+    /* VERIFICA EM QUE PÁGINA ESTA ATUALMENTE E ADICIONA A CLASSE ACTIVE.*/
+    var url = window.location.href,
+    aNamePag = url.split('/'), 
+    sizeArray = aNamePag.length,
+    pag = aNamePag[(sizeArray-1)];
+    $('.nav-link').each(function(i,e){
+        if($(this).attr('href') == pag){
+            $( ".nav-link[href='"+ pag +"']" ).addClass("active");
         }
-    }
-});
-}
-, function(){ 
+    });
+
+    /* MARCAR E DESMARCAR TODOS OS ÍTENS*/
+    $('#chkCdNoticia').click(function(event) {
+        event.preventDefault();
+        var inputCheck = $('input[type=checkbox]#chkCdNoticia');
+        if(inputCheck.not(':checked').length == 0){
+            inputCheck.prop('checked', false);
+            return false;
+        } else {
+            inputCheck.prop('checked', true);
+        }
+    });
+
+
+    /*FUNÇÃO PARA APAGAR VÁRIOS ITENS DE UMA VEZ*/
+    $('#btApagarItem').click(function(event) {
+       if($('input[id=chkCdNoticia]:checkbox:checked').length == 0) {
+        alertify.error('Selecione pelo menos uma foto!');
+        return false;
+    }  
+
+    var val= [];
+
+    $('input[id=chkCdNoticia]:checkbox:checked').each(function (i) {
+        val[i] = $(this).val();
+    });
+
+    var dados = val;
+
+    alertify.confirm('Alerta!', 'Deseja realmente excluir?', function(){ 
+
+      $.ajax({
+        url: '../excluir-foto.php',
+        type: 'POST',
+        dataType: 'html',
+        data: {dados},
+        success: function(r){             
+            if(r == true){
+                alertify.success('Excluído com sucesso!');
+                setTimeout(function () {
+                    location.reload();
+                }, 1500);
+            }
+        }
+    });
+  }
+  , function(){ 
     alertify.error('Cancelado');
 });
-  }); // Fim função apagar várias fotos.
+  }); /* FIM */
 
 
     $('#idAlbum').change(function(event) { // Seta o campo nomeFoto com mesmo nome do album.
