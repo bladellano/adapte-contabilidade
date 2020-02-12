@@ -27,10 +27,10 @@
         <?php 
 
         foreach ($data['noticias'] as $noticia):
-        extract($noticia);
-        ?>
-        <li><a href="#" data-toggle="modal" data-target="#modalNoticia" data-id="<?=$idNoticia?>"><?=$tituloNoticia?></a></li>
-        <?php
+          extract($noticia);
+          ?>
+          <li><a href="#" data-toggle="modal" data-target="#modalNoticia" data-id="<?=$idNoticia?>"><?=$tituloNoticia?></a></li>
+          <?php
         endforeach;        
         ?>
 

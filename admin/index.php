@@ -7,11 +7,12 @@
   <meta name="description" content="Gerenciador de conteúdo do Portal">
   <meta name="author" content="Caio Silva">
   
-  <title>Login | Admin</title>
+  <title>.:Gerenciador de Conteúdo:.</title>
 
   <link href="css/floating-labels.css" rel="stylesheet">
   <script src="js/jquery.min.js" type="text/javascript"></script>
   <script src="js/functions.js" type="text/javascript"></script>
+  <script src="js/jquery.mask.js" type="text/javascript"></script>
   <script src="js/alertify.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <link rel="icon" type="image/png" href="img/person-circle-outline.svg" />

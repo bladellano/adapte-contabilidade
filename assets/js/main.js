@@ -12,14 +12,18 @@
             dataType: 'json',
             data: {id},
             success:function(r){
-                 $('.show-titulo,.modal-title').html(`<p><b>${r.tituloNoticia.toUpperCase()}</b></p>`);
+                 $('.show-titulo').html(`<p><b>${r.tituloNoticia.toUpperCase()}</b></p>`);
                  $('.show-conteudo').html(`<p>${r.conteudo}</p>`);
+                 $('.show-data-captura').html(`${convertDataPtbr(r.dataCaptura)}`);
             }
         });
         
     });
 
-
+    function convertDataPtbr(date){
+        const dateModified = date.slice(0,10).split('-').reverse();
+        return dateModified.join('/');
+    }
     /* MASCARA PARA O CAMPO TELEFONE */
     $('input[name="telefone"],input[name="telefone_"]').mask('(00) 00000-0000');
 
@@ -83,7 +87,6 @@
             return alertify.error('Preencha o corretamente o campo e-mail.');
         if (telefone.length == 0)
             return alertify.error('Preencha corretamente o campo telefone');
-
 
         $('#form-contato :input').attr('disabled', 'disabled');
         $('#btn-contato').text('ENVIANDO...');

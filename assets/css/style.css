@@ -18,16 +18,12 @@ Desenvolvimento FireFly
     box-sizing: border-box;
     font-size: 16px;
 }
-
 .logo-header {
     width: 262px;
 }
-
 .logo-footer {
     width: 154px;
 }
-
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .slick-parceiros .slick-slide {
@@ -46,8 +42,6 @@ Desenvolvimento FireFly
     filter: opacity(100%) grayscale(1);
     transition: .3s;
 }
-
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .box-evento {
@@ -120,8 +114,6 @@ Desenvolvimento FireFly
 .box-evento .resumo a:hover {
     background-color: #003048;
 }
-
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #owl-demo .item img {
@@ -129,8 +121,6 @@ Desenvolvimento FireFly
     width: 100%;
     height: auto;
 }
-
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .card .card-body h5 {
@@ -142,8 +132,6 @@ Desenvolvimento FireFly
     text-align: center;
     padding: 10px;
 }
-
-
 /* PERSONALIZANDO ARROWS DO SLICK */
 
 .slick-next.slick-arrow,
@@ -193,7 +181,6 @@ body {
     background: var(--cor-bg-principal);
 }
 
-
 /* PERSONALIZANDO BOTÃO SUBIR TOPO */
 
 .topo {
@@ -212,7 +199,6 @@ body {
     left:50%;
     transform: translate(-50%, -50%);
 }
-
 
 /* PERSONALIZANDO BOTÃO BOOTSTRAP */
 
@@ -242,7 +228,6 @@ body {
     color: #FFF;
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #information {
@@ -265,7 +250,6 @@ body {
     display: block;
     font-weight: 300;
 }
-
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -300,7 +284,6 @@ body {
     margin: 0 auto;
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #eventos .slick-eventos {
@@ -331,8 +314,6 @@ body {
     width: 200px;
     margin: 0 auto;
 }
-
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #video-institucional .embed-responsive {
@@ -363,30 +344,6 @@ body {
     border-top: 2px solid var(--cor-color-secundaria);
     border-bottom: 2px solid var(--cor-color-secundaria);
 }
-
-
-/* #services .container .row:only-child {
-    text-align: right;
-}
-
-#services {
-    background-color: var(--cor-color-principal);
-    width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-#services p {
-    color: #333;
-    font-size: 1.3em;
-    text-align: right;
-}
-
-#services .container .row .col-md-6 .btn.btn-warning {
-    color: #FFF;
-    } */
-
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -425,7 +382,6 @@ body {
     margin: 0 auto;
     margin-bottom: 10px;
 }
-
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -489,7 +445,6 @@ body {
     background: var(--cor-color-secundaria);
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #parceiros hr {
@@ -514,7 +469,6 @@ body {
     padding-bottom: 10px;
     padding-top: 20px;
 }
-
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -567,14 +521,6 @@ body {
     font-weight: bold;
 }
 
-
-/* #links-services .container .row .col-lg-2:nth-child(1) a{background-color: #F58634;}
-#links-services .container .row .col-lg-2:nth-child(2) a{background-color: #3D619E;}
-#links-services .container .row .col-lg-2:nth-child(3) a{background-color: #44C1C4;}
-#links-services .container .row .col-lg-2:nth-child(4) a{background-color: #00A859;}
-#links-services .container .row .col-lg-2:nth-child(5) a{background-color: #A53692;}
-#links-services .container .row .col-lg-2:nth-child(6) a{background-color: #D63135;} */
-
 #links-services .container .row:only-child a:hover .fas {
     font-size: 90px;
 }
@@ -610,7 +556,6 @@ body {
     font-size: 0.8em;
     color: #333;
 }
-
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -672,7 +617,6 @@ body {
     line-height: 26px;
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #assign {
@@ -692,13 +636,11 @@ body {
     max-height: 33px;
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .form-control {
     margin-bottom: 24px;
 }
-
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -755,9 +697,7 @@ body {
     color: #FFF;
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
-
 .wrap-content-form button {
     position: absolute;
     left: 108px;
@@ -774,7 +714,6 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -839,7 +778,6 @@ body {
     margin: 0 auto;
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .bg-fale-conosco-pg-default {
@@ -871,7 +809,6 @@ h3.border-bottom.border-gray {
     margin-top: 24px;
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .custom {
@@ -893,7 +830,6 @@ h3.border-bottom.border-gray {
 .custom h4 {
     color: #777;
 }
-
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -960,7 +896,6 @@ h3.border-bottom.border-gray {
     transition: all 0.3s ease;
 }
 
-
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .nav-links {
@@ -991,35 +926,6 @@ h3.border-bottom.border-gray {
     opacity: 1;
     border: 1px solid #FFF;
 }
-
-
-/*.nav-links li a hr{
-    border: 1px solid #000;
-    width: 0;
-    transition: ease .2s;
-    margin-bottom: -2px;
-    margin-top: 0px;
-    opacity: 0;
-}
-.nav-links li:hover a hr{S
-   width : 100%;
-   opacity: 1;
-}
-.nav-links li a:hover {
-    color: var(--cor-color-secundaria);
-}
-.sub-menu ul li a hr{
-    border: 1px solid #FFF;
-    width: 0;
-    transition: ease .2s;
-    margin-bottom: -2px;
-    margin-top: 0px;
-    opacity: 0;
-}
-.sub-menu ul li:hover hr{
-    width : 100%;
-    opacity: 1;
-    }*/
 
 .active-menu,
 .nav-links li:hover {
@@ -1211,7 +1117,6 @@ h3.border-bottom.border-gray {
         display: block;
     }
 }
-
 
 /*FIM MEDIA*/
 

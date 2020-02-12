@@ -1,14 +1,12 @@
 <?php 
 
 require_once "models/Login.php";
-
-$objUsuario = new Login();
-
+$oUsuario = new Login();
 $dados = array(
 	$_REQUEST['inputEmail'],
 	sha1( $_REQUEST['inputPassword'] )
 );
 
-echo $objUsuario->getIdUsuario($dados);
+echo $oUsuario->getIdUsuario($dados);
 
 ?>

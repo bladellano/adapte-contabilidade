@@ -1,6 +1,6 @@
 $(function () {
 
-// Verifica em que página esta atualmente e adiciona a classe active.
+/* VERIFICA EM QUE PÁGINA ESTA ATUALMENTE E ADICIONA A CLASSE ACTIVE.*/
 var url = window.location.href,
 aNamePag = url.split('/'), 
 sizeArray = aNamePag.length,
@@ -11,23 +11,22 @@ $('.nav-link').each(function(i,e){
     }
 });
 
-    // Marca e desmarca todos os ítens.
-    $('#chkCdNoticia').click(function(event) {
-        event.preventDefault();
-        var inputCheck = $('input[type=checkbox]#chkCdNoticia');
-        if(inputCheck.not(':checked').length == 0){
-            inputCheck.prop('checked', false);
-            return false;
-        } else {
-            inputCheck.prop('checked', true);
-        }
-    });
+/* MARCAR E DESMARCAR TODOS OS ÍTENS*/
+$('#chkCdNoticia').click(function(event) {
+    event.preventDefault();
+    var inputCheck = $('input[type=checkbox]#chkCdNoticia');
+    if(inputCheck.not(':checked').length == 0){
+        inputCheck.prop('checked', false);
+        return false;
+    } else {
+        inputCheck.prop('checked', true);
+    }
+});
 
 
-// Função para apagar vários itens de uma vez.
-$('#btApagarItem').click(function(event) { 
-
- if($('input[id=chkCdNoticia]:checkbox:checked').length == 0) {
+/*FUNÇÃO PARA APAGAR VÁRIOS ITENS DE UMA VEZ*/
+$('#btApagarItem').click(function(event) {
+   if($('input[id=chkCdNoticia]:checkbox:checked').length == 0) {
     alertify.error('Selecione pelo menos uma foto!');
     return false;
 }  
@@ -64,8 +63,8 @@ alertify.confirm('Alerta!', 'Deseja realmente excluir?', function(){
 
 
     $('#idAlbum').change(function(event) { // Seta o campo nomeFoto com mesmo nome do album.
-       $('#tituloFoto').val($('#idAlbum option:selected').text());
-   });
+     $('#tituloFoto').val($('#idAlbum option:selected').text());
+ });
 
 
     //Tooltip - Setando a posição da caixa exibindo quando passa em cima do nome.
@@ -86,21 +85,14 @@ alertify.confirm('Alerta!', 'Deseja realmente excluir?', function(){
     });
 
 
-    //Login
+    /* LOGIN */
     $('#entrarSistema').click(function (e) {
-
         e.preventDefault();
-
         vazios = validarFormVazio('frmLogin');
+        if (vazios > 0) 
+            return alertify.error("Preencha os campos!!");        
 
-        if (vazios > 0) {
-
-            alertify.error("Preencha os campos!!");
-
-            return false;
-        }
-
-        dados = $('#frmLogin').serialize();
+        let dados = $('#frmLogin').serialize();
 
         $.ajax({
             type: "POST",
@@ -111,11 +103,11 @@ alertify.confirm('Alerta!', 'Deseja realmente excluir?', function(){
                 if (r == 1) {
                     window.location = "views/inicio.php";
                 } else {
-                    alertify.error("Usuário ou senha não confere :(");
+                    return alertify.error("Usuário ou senha não confere :(");
                 }
             },
             error: function (request, status, error) {
-                alert(request.responseText);
+                return alertify.error(request.responseText);
             }
         });
     });
@@ -153,7 +145,7 @@ alertify.confirm('Alerta!', 'Deseja realmente excluir?', function(){
             })
             .done(function (r) {
 
-               if (r == true) {
+             if (r == true) {
                 alertify.success('Excluído com sucesso!');
                 setTimeout(function () {
                     location.reload();
@@ -523,10 +515,10 @@ alertify.confirm('Alerta!', 'Deseja realmente excluir?', function(){
     // document.getElementById("foto").onchange = function(e) { 
 
         $("#foto, #arquivo").change(function (e) {
-         data = new FormData();
-         var nomeArquivo = [],
-         respStringInt;
-         for (var i = 0; i < e.target.files.length; i++) {
+           data = new FormData();
+           var nomeArquivo = [],
+           respStringInt;
+           for (var i = 0; i < e.target.files.length; i++) {
             nomeArquivo[i] = e.target.files[i].name;
         }
 

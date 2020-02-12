@@ -53,17 +53,18 @@ add_chatinline(); </script>
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+          <h5 class="modal-title" id="exampleModalLabel"><i class="far fa-newspaper"></i> Últimas notícias em <span class="show-data-captura"></span></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+          <div class="show-titulo"></div>
           <div class="show-conteudo"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Salvar mudanças</button>
+          <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
         </div>
       </div>
     </div>

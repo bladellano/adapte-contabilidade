@@ -17,13 +17,13 @@
             <li class="nav-item">
               <a class="nav-link" href="fotos.php">Fotos</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="albuns.php">Albuns</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="membros.php">Membros</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="videos.php">Videos</a>
             </li>
             <li class="nav-item dropdown">
