@@ -9,7 +9,7 @@
     top: -25px;
     cursor: pointer;
   }
-  .btn-show-details:before{s
+  .btn-show-details:before{
     font-family: "FontAwesome";
     content: "\f078";
     opacity: 0.4;

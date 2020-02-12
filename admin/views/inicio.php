@@ -2,6 +2,7 @@
  require_once "_header.php";
  require_once "menu.php"; 
  ?> 
+ 
  <div class="container">
  	<div class="breadcrumb"> 		
  	Seja bem-vindo(a) <strong> <?=$_SESSION['Usuario']['nome']?>.</strong> 	

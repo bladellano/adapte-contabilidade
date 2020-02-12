@@ -1,20 +1,19 @@
 <?php 
- 
+
 require_once "../models/Noticias.php";
 require_once "../models/Albuns.php";
 require_once "../models/Fotos.php";
 require_once "../models/Videos.php";
 
 $objNoticia = new Noticias();
-$objAlbum = new Albuns();
-$objFoto = new Fotos();
-$objVideo = new Videos();
+$objAlbum   = new Albuns();
+$objFoto    = new Fotos();
+$objVideo   = new Videos();
+
+require_once "_header.php";
+require_once "menu.php"; 
 
 ?>
-
-<?php require_once "_header.php"; ?>
-
-<?php require_once "menu.php"; ?>
 
 <div class="container" style="margin-bottom: 140px;">
 
@@ -41,8 +40,7 @@ $objVideo = new Videos();
             </div>
         </div>
     </div>
-    <!-- fim Modal -->
-
+    <!-- FIM MODAL -->
 
     <h3>CADASTRAR NOTÍCIAS</h3>
 
@@ -61,7 +59,7 @@ $objVideo = new Videos();
                 <select name="idAlbum" id="idAlbum" class="form-control"><br>
                     <option value="">SELECIONE</option>
                     <?php foreach($objAlbum->listarAlbuns() as $album): ?>
-                    <option value="<?php echo $album["idAlbum"] ?>"><?php echo $album["nomeAlbum"] ?></option>
+                        <option value="<?php echo $album["idAlbum"] ?>"><?php echo $album["nomeAlbum"] ?></option>
                     <?php endforeach;  ?>
                 </select>
             </div>
@@ -70,7 +68,7 @@ $objVideo = new Videos();
                 <select name="idVideo" id="idVideo" class="form-control">
                     <option value="">SELECIONE</option>
                     <?php foreach($objVideo->listarVideos() as $video): ?>
-                    <option value="<?php echo $video["idVideo"] ?>"><?php echo $video["tituloVideo"] ?></option>
+                        <option value="<?php echo $video["idVideo"] ?>"><?php echo $video["tituloVideo"] ?></option>
                     <?php endforeach;  ?>
                 </select>
             </div>
@@ -104,12 +102,12 @@ $objVideo = new Videos();
     <hr>
     <?php  
 
-	if($objNoticia->paginacao()["totalResult"] > 0):
+    if($objNoticia->paginacao()["totalResult"] > 0):
 
-		?>
+      ?>
 
-    <h3>LISTA DE NOTÍCIAS</h3>
-    <table class="table table-hover">
+      <h3>LISTA DE NOTÍCIAS</h3>
+      <table class="table table-hover">
         <thead>
             <tr>
                 <th>Título</th>
@@ -123,44 +121,45 @@ $objVideo = new Videos();
             <tr>
                 <?php 
 
-					foreach ($objNoticia->paginacao()["objItens"] as $noticia) {
-						echo '<tr>';
-						echo '<td>'.$noticia["tituloNoticia"].'</td>'; 	
+                foreach ($objNoticia->paginacao()["objItens"] as $noticia) {
+                  echo '<tr>';
+                  echo '<td>'.$noticia["tituloNoticia"].'</td>'; 	
 						// echo '<td><img width="80" src="../'.$objFoto->selecionarFoto($noticia["idFoto"])->urlFoto.'" alt=""></td>';
-                        echo '<td><img width="80" src="../'.$noticia["thumb_imagem"].'" alt=""></td>';
-						echo '<td>'.$objAlbum->selecionarAlbum($noticia["idAlbum"]).'</td>'; 			
-						echo '<td>'.$objNoticia->formatDataPtbr($noticia["dataCaptura"]).'</td>'; 				 
-						echo '<td align="center"><a class="idNoticia apagar btn btn-danger" href='.$noticia["idNoticia"].'><i class="fa fa-close"></i></a> '; 
-						echo '<span class="btn btn-success" data-toggle="modal" data-target="#atualizarNoticia" 
-						onclick="adicionarDado('.$noticia["idNoticia"].',\''.$noticia["tituloNoticia"].'\')"><i class="fa fa-edit"></i></span>
-						</td>';	
-						echo '</tr>';
-					}
+                  echo '<td><img width="80" src="../'.$noticia["thumb_imagem"].'" alt=""></td>';
+                  echo '<td>'.$objAlbum->selecionarAlbum($noticia["idAlbum"]).'</td>'; 			
+                  echo '<td>'.$objNoticia->formatDataPtbr($noticia["dataCaptura"]).'</td>'; 				 
+                  echo '<td align="center"><a class="idNoticia apagar btn btn-danger" href='.$noticia["idNoticia"].'><i class="fa fa-close"></i></a> '; 
+                  echo '<span class="btn btn-success" data-toggle="modal" data-target="#atualizarNoticia" 
+                  onclick="adicionarDado('.$noticia["idNoticia"].',\''.$noticia["tituloNoticia"].'\')"><i class="fa fa-edit"></i></span>
+                  </td>';	
+                  echo '</tr>';
+              }
 
-					?>
+              ?>
 
-        </tbody>
-    </table>
-    <!-- Mostrando os botões da paginação -->
-    <?php 
+          </tbody>
+      </table>
+      <!-- MOSTRANDO OS BOTÕES DA PAGINAÇÃO -->
+      <?php 
 
-			echo $objNoticia->paginacao()["botoesPaginacao"]; 
+      echo $objNoticia->paginacao()["botoesPaginacao"]; 
 
-		else:
+  else:
+   echo "Não há registro(s).";
 
-			echo "Não há registro(s).";
-
-		endif; 
-
-		?>
+endif; 
+?>
 
 </div> <!-- fim containter -->
 
 <script type="text/javascript">
-    // CKEDITOR.replace('conteudo');
 
-    new FroalaEditor('textarea#conteudo')
-
+    $(function(){
+        CKEDITOR.replace( 'conteudo' , {
+    language: 'fr',
+    uiColor: '#9AB8F3'
+});
+   });
 
     function adicionarDado(idnoticia, titulofoto) {
 
