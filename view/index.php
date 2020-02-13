@@ -4,7 +4,7 @@
 <div id="owl-demo" class="owl-carousel owl-theme">
 
   <!-- <div class="item"><img src="assets/img/banner-06.jpg" alt=""></div> -->
-  <div class="item"><img src="assets/img/banner-04.jpg" alt=""></div>
+  <!-- <div class="item"><img src="assets/img/banner-04.jpg" alt=""></div> -->
   <div class="item"><img src="assets/img/banner-01.jpg" alt=""></div>
   <div class="item"><img src="assets/img/banner-02.jpg" alt=""></div>
   <!-- <div class="item"><img src="assets/img/banner-03.jpg" alt=""></div> -->
@@ -14,6 +14,27 @@
 
 <section>
 
+<div id="tres-servicos">
+  <h2>Serviços</h2>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box-servicos"><a href="#">ABRIR EMPRESAS</a></div>
+      </div>
+      <div class="col-md-4">
+       <div class="col-md-4">
+        <div class="box-servicos"><a href="#">MIGRAR EMPRESAS</a></div>
+      </div>
+    </div>
+    <div class="col-md-4">
+     <div class="col-md-4">
+      <div class="box-servicos"><a href="#">REGULARIZAR EMPRESA</a></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
  <div id="sobre-nos">
   <div class="container">
    <h2>Sobre nós</h2>
@@ -27,7 +48,7 @@
       <p>Nosso propósito é demonstrar de maneira prática ao empresário a importância da contabilidade para o seu negócio, para isso contamos com uma equipe de profissionais qualificados em cada área de atuação, com escritório inteiramente informatizado, pronto a integrar-se ao cliente, de modo rápido, eficiente e seguro.</p>
     </div>
     <div class="col-md-6">
-      <img src="assets/img/35.jpg" alt="Imagem Business" class="img-responsive">
+      <img src="assets/img/sobre-nos.png" alt="Imagem Business" class="img-responsive">
     </div>
   </div>
 
@@ -109,27 +130,6 @@
 
 
 
-<div id="tres-servicos">
-  <h2>Serviços</h2>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="box-servicos"><a href="#">ABRIR EMPRESAS</a></div>
-      </div>
-      <div class="col-md-4">
-       <div class="col-md-4">
-        <div class="box-servicos"><a href="#">MIGRAR EMPRESAS</a></div>
-      </div>
-    </div>
-    <div class="col-md-4">
-     <div class="col-md-4">
-      <div class="box-servicos"><a href="#">REGULARIZAR EMPRESA</a></div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
 
 <div id="parceiros">
   <h2>Parceiros</h2>

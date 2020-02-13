@@ -7,7 +7,7 @@ function my_autoload ($pClassName) {
 spl_autoload_register("my_autoload");
 
 $oNoticia = new Noticias();
-$objAlbum = new Albuns();
+$oAlbum   = new Albuns();
 $objFoto  = new Fotos();
 $objVideo = new Videos();
 
@@ -18,7 +18,7 @@ require_once "menu.php";
 
 <div class="container" style="margin-bottom: 140px;">
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <div class="modal fade" id="atualizarNoticia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
@@ -59,7 +59,7 @@ require_once "menu.php";
                 <label for="idAlbum">Album:</label>
                 <select name="idAlbum" id="idAlbum" class="form-control"><br>
                     <option value="">SELECIONE</option>
-                    <?php foreach($objAlbum->listarAlbuns() as $album): ?>
+                    <?php foreach($oAlbum->listarAlbuns() as $album): ?>
                         <option value="<?php echo $album["idAlbum"] ?>"><?php echo $album["nomeAlbum"] ?></option>
                     <?php endforeach;  ?>
                 </select>
@@ -125,10 +125,11 @@ require_once "menu.php";
 
                 foreach ($oNoticia->paginacao()["objItens"] as $noticia) {
                   echo '<tr>';
-                  echo '<td>'.$noticia["tituloNoticia"].'</td>'; 	
-						// echo '<td><img width="80" src="../'.$objFoto->selecionarFoto($noticia["idFoto"])->urlFoto.'" alt=""></td>';
-                  echo '<td><img width="80" src="../'.$noticia["thumb_imagem"].'" alt=""></td>';
-                  echo '<td>'.$objAlbum->selecionarAlbum($noticia["idAlbum"]).'</td>'; 			
+                  echo '<td>'.$noticia["tituloNoticia"].'</td>'; 	        
+                  if($noticia["thumb_imagem"] != "upload/thumbnail_")
+                        $attrImg = "<img width='80' src='../{$noticia["thumb_imagem"]}'>";
+                  echo "<td>$attrImg</td>";
+                  echo '<td>'.$oAlbum->selecionarAlbum($noticia["idAlbum"]).'</td>'; 			
                   echo '<td>'.$oNoticia->formatDataPtbr($noticia["dataCaptura"]).'</td>'; 				 
                   echo '<td align="center"><a class="idNoticia apagar btn btn-danger" href='.$noticia["idNoticia"].'><i class="fa fa-close"></i></a> '; 
                   echo '<span class="btn btn-success" data-toggle="modal" data-target="#atualizarNoticia" 
@@ -152,7 +153,7 @@ require_once "menu.php";
 endif; 
 ?>
 
-</div> <!-- fim containter -->
+</div> <!-- FIM CONTAINTER -->
 
 <script type="text/javascript">
 

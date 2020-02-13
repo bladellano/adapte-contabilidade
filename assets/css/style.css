@@ -253,6 +253,9 @@ body {
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
+#sobre-nos {
+background-color: #191919;
+}
 #sobre-nos img {
     max-width: 98%;
     padding-bottom: 20px;
@@ -261,14 +264,17 @@ body {
 #sobre-nos p {
     text-align: right;
     line-height: 35px;
+    color:#FFF;
 }
 
 #sobre-nos h3 {
     text-align: right;
+    color:#FFF;
 }
 
 #sobre-nos h2 i {
     font-size: 26px;
+     color:#FFF;
 }
 
 #sobre-nos h2 {
@@ -276,11 +282,13 @@ body {
     text-align: center;
     color: #333;
     text-transform: uppercase;
+     color:#FFF;
 }
 
 #sobre-nos hr {
-    border: 2px solid #333;
+    border: 2px solid #FFF;
     width: 100px;
+
     margin: 0 auto;
 }
 
@@ -405,7 +413,7 @@ body {
 #tres-servicos {
     margin: 0 auto;
     height: auto;
-    background-image: url("../../assets/img/fundo-predios.jpg");
+    /*background-image: url("../../assets/img/fundo-predios.jpg");*/
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -468,6 +476,7 @@ body {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 20px;
+    background-color: #EEE;
 }
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/

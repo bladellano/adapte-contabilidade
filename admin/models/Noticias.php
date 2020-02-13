@@ -14,7 +14,7 @@ class Noticias extends Conexao {
 		parent::__construct('tb_noticias');
 	}
 
-	public function salvarNoticia($titulo_noticia, $conteudo, $arquivo_name=null, $arquivo_tmp_name=null, $arquivo_type=null, $id_album = nulll, $id_video = null, $tipo_noticia){
+	public function salvarNoticia($titulo_noticia, $conteudo, $arquivo_name=null, $arquivo_tmp_name=null, $arquivo_type=null, $id_album = nulll, $id_video = null, $tipo_noticia,$id_usuario){
 
 		$newNameFile = "";
 
@@ -29,22 +29,29 @@ class Noticias extends Conexao {
 				$newNameFile, 
 				self::pasta
 			);
-
-			move_uploaded_file($arquivo_tmp_name, self::pasta.$newNameFile);
-			
+			move_uploaded_file($arquivo_tmp_name, self::pasta.$newNameFile);			
 		}
 
-		$this->titulo_noticia = $titulo_noticia;
-		$this->conteudo = $conteudo;
+		$this->titulo_noticia    = $titulo_noticia;
+		$this->conteudo          = $conteudo;
 		$this->nome_arquivo_novo = $newNameFile;
 
 		try {
 
-			$sql  = "INSERT INTO tb_noticias (tituloNoticia, conteudo, idAlbum, idVideo, tipoNoticia, imagem, thumb_imagem) VALUES (?,?,?,?,?,?,?)";
+			$sql  = "INSERT INTO tb_noticias (tituloNoticia, conteudo, idAlbum, idVideo, tipoNoticia, imagem, thumb_imagem,idUsuario) VALUES (?,?,?,?,?,?,?,?)";
 			
 			$stmt = $this->db->prepare($sql);
 
-			if(!$stmt->execute([$titulo_noticia, $conteudo, $id_album, $id_video, $tipo_noticia, self::pasta.$newNameFile, self::pasta."thumbnail_".$newNameFile])){
+			if(!$stmt->execute(
+				array($titulo_noticia, 
+					$conteudo, 
+					$id_album,
+					$id_video, 
+					$tipo_noticia, 
+					self::pasta.$newNameFile,
+					self::pasta."thumbnail_".$newNameFile,
+					$id_usuario)
+			)){
 
 				return false;
 

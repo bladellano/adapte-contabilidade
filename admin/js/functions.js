@@ -31,7 +31,7 @@ $(function () {
 
     /*FUNÇÃO PARA APAGAR VÁRIOS ITENS DE UMA VEZ*/
     $('#btApagarItem').click(function(event) {
-       if($('input[id=chkCdNoticia]:checkbox:checked').length == 0) {
+     if($('input[id=chkCdNoticia]:checkbox:checked').length == 0) {
         alertify.error('Selecione pelo menos uma foto!');
         return false;
     }  
@@ -68,18 +68,18 @@ $(function () {
 
 
     $('#idAlbum').change(function(event) { // Seta o campo nomeFoto com mesmo nome do album.
-     $('#tituloFoto').val($('#idAlbum option:selected').text());
- });
+       $('#tituloFoto').val($('#idAlbum option:selected').text());
+   });
 
 
     //Tooltip - Setando a posição da caixa exibindo quando passa em cima do nome.
     $('.viewFoto').hover(function () {
 
-        var objCaixa = $('#caixa_' + $(this).attr('data-id'));
+        var oCaixa = $('#caixa_' + $(this).attr('data-id'));
         var posTop = $(this).offset().top;
         var postLeft = $(this).offset().left;
 
-        objCaixa.css({
+        oCaixa.css({
             'top': posTop + (-30),
             'left': postLeft + 130
         }).fadeIn();
@@ -147,7 +147,7 @@ $(function () {
             })
             .done(function (r) {
 
-             if (r == true) {
+               if (r == true) {
                 alertify.success('EXCLUÍDO COM SUCESSO!');
                 setTimeout(function () {
                     location.reload();
@@ -166,7 +166,7 @@ $(function () {
     $('#form-membro').submit(function (e) {
 
         if ($('#foto').val() == "") {
-            alertify.error('Por favor insera uma foto!');
+            alertify.error('POR FAVOR INSERA UMA FOTO!');
             return false;
         }
 
@@ -224,7 +224,7 @@ $(function () {
     })
 
 
-    /*INSERE NOTÍCIA*/
+    /*INSERE A NOTÍCIA*/
     $('#form-noticia').submit(function (e) {
         e.preventDefault();
 
@@ -232,10 +232,11 @@ $(function () {
             CKEDITOR.instances[instance].updateElement();
         
         if (typeof data === 'object') {
-            var processData = false,
-            cache = false,
-            contentType = false;
-            var formCompleto = document.getElementById('form-noticia');
+
+            var processData    = false;
+            var cache          = false;
+            var contentType    = false;
+            const formCompleto = document.getElementById('form-noticia');
 
             for (i = 0; i < formCompleto.length; i++) {
                 var campo = formCompleto[i].getAttribute('name');
@@ -244,9 +245,7 @@ $(function () {
                     data.append(campo, valor);
                 }
             }
-
         } else {
-
             data = $(this).serializeArray();
         }
 
@@ -259,7 +258,7 @@ $(function () {
 
                 if (r == 1) {
                     alertify.success('INSERIDO COM SUCESSO!');
-                    $('#form-noticia')[0].reset(); /*RESETA FORMULÁRIO*/  
+                    $('#form-noticia')[0].reset(); /*LIMPA OS CAMPOS DO FORMULÁRIO*/
                     setTimeout(function () {
                         location.reload();
                     }, 1500);
@@ -275,76 +274,50 @@ $(function () {
 
     });
 
-
-    //Insere video
-
+    /*INSERE VIDEO*/
     $('#form-video').submit(function (e) {
-
         e.preventDefault();
-
-        data = $($(this)).serializeArray();
-
+        var data = $($(this)).serializeArray();
         $.ajax({
-
             type: $(this).attr('method'),
             url: '../salvar-video.php',
             dataType: 'html',
             data: data,
-
         })
         .done(function (r) {
 
-            if (r == 1) {
+            if (r == 1) {             
+                alertify.success('VIDEO INSERIDO COM SUCESSO!');
+                $('#form-video')[0].reset(); /*LIMPA OS CAMPOS DO FORMULÁRIO*/
+            }
+            setTimeout(function () {
+                location.reload();
+            }, 1500);
+        });
 
-                    // alertify.alert('Mensagem', 'Inserido com sucesso!', function () {
-                    // });
-                    alertify.success('Video inserido com sucesso!');
+    });
 
-                    $('#form-video')[0].reset(); //reseta formulário
-
-                }
-
-                setTimeout(function () {
-                    location.reload();
-                }, 1500);
-
-            });
-
-    })
-
-
-    //Insere album
-
+    /*INSERE UM ALBUM*/
     $('#form-album').submit(function (e) {
         e.preventDefault();
-
-        data = $('#nomeAlbum').val();
-
+        var data = $('#nomeAlbum').val();
         $.ajax({
-
             type: $(this).attr('method'),
             url: '../salvar-album.php',
             dataType: 'html',
             data: 'nomeAlbum=' + data,
         })
         .done(function (r) {
-
             if (r == 1) {
-
                 alertify.success('Album inserido com sucesso!');
-
-                    $('#form-album')[0].reset(); // Reseta formulário
-
+                    $('#form-album')[0].reset(); /* RESETA FORMULÁRIO */ 
                 }
-
                 setTimeout(function () {
                     location.reload();
                 }, 1500);
-
             });
 
     });
-
 
     function verificarEmail(email){
         if(email == '') return false;
@@ -511,17 +484,17 @@ $(function () {
 
     // document.getElementById("foto").onchange = function(e) { 
 
-        $("#foto, #arquivo").change(function (e) {
-           data = new FormData();
-           var nomeArquivo = [],
-           respStringInt;
-           for (var i = 0; i < e.target.files.length; i++) {
+        $("#foto, #arquivo").change(function (e) {/*FOCO*/
+         data = new FormData();
+         let nomeArquivo = [];
+         let respStringInt;
+
+         for (var i = 0; i < e.target.files.length; i++) {
             nomeArquivo[i] = e.target.files[i].name;
         }
 
-        (e.target.files.length > 1) ? respStringInt = e.target.files.length + " arquivo(s)": respStringInt = nomeArquivo.join(", ");
+        e.target.files.length > 1 ? respStringInt = e.target.files.length + " arquivo(s)": respStringInt = nomeArquivo.join(", ");
 
-        // console.log(respStringInt);
 
         $('label[for="foto"], label[for="arquivo"]').text(respStringInt);
 
@@ -534,16 +507,17 @@ $(function () {
             var type = e.target.files;
             for (i = 0; i < e.target.files.length; i++) {
 
-                if (type[i].type == "application/pdf" || type[i].type == "image/jpeg" || type[i].type == "image/png") { //verifica tipo extensão
-                    size_arquivos += e.target.files[i].size;
-                    data.append("arquivo[]", e.target.files[i]);
+                if (type[i].type == "application/pdf" || type[i].type == "image/jpeg" || type[i].type == "image/png") { 
+                //VERIFICA TIPO EXTENSÃO
+                size_arquivos += e.target.files[i].size;
+                data.append("arquivo[]", e.target.files[i]);
 
-                } else {
-                    alert('Tipo de arquivo não aceito!');
-                    data.delete('arquivo[]');
-                }
+            } else {
+                alert('Tipo de arquivo não aceito!');
+                data.delete('arquivo[]');
             }
         }
+    }
 
         var max_size = 10000000; //10000000 = 10MB
 
@@ -557,42 +531,42 @@ $(function () {
      });
 
 
-    //Upload de foto
-    $('#form-upload').submit(function (e) {
+        /*UPLOAD DE FOTO*/
+        $('#form-upload').submit(function (e) {
 
-        if (typeof data === 'undefined') {
-            alertify.error('<i class="fa fa-exclamation-triangle"></i> Selecione uma ou  mais imagens!');
-            return false;
-        }
-
-        e.preventDefault();
-
-        var formCompleto = document.getElementById('form-upload');
-
-        for (i = 0; i < formCompleto.length; i++) {
-            var campo = formCompleto[i].getAttribute('name');
-            var valor = formCompleto[i].value;
-
-            if (campo != 0 && campo != null && campo != "arquivo[]") {
-                data.append(campo, valor);
+            if (typeof data === 'undefined') {
+                alertify.error('<i class="fa fa-exclamation-triangle"></i> Selecione uma ou  mais imagens!');
+                return false;
             }
 
-        }
+            e.preventDefault();
 
-        $.ajax({
-            url: '../salvar-foto.php',
-            data: data,
-            type: 'post',
-            dataType: 'html',
-            beforeSend: function(){
+            var formCompleto = document.getElementById('form-upload');
 
-                $(".fundo").css("display", "block");
-                $("#wait").css("display", "block");     
-            },
-            success: function (r) {
+            for (i = 0; i < formCompleto.length; i++) {
+                var campo = formCompleto[i].getAttribute('name');
+                var valor = formCompleto[i].value;
 
-                if (r == 1) {
-                    alertify.success('Inserido com sucesso!');
+                if (campo != 0 && campo != null && campo != "arquivo[]") {
+                    data.append(campo, valor);
+                }
+
+            }
+
+            $.ajax({
+                url: '../salvar-foto.php',
+                data: data,
+                type: 'post',
+                dataType: 'html',
+                beforeSend: function(){
+
+                    $(".fundo").css("display", "block");
+                    $("#wait").css("display", "block");     
+                },
+                success: function (r) {
+
+                    if (r == 1) {
+                        alertify.success('Inserido com sucesso!');
                     $('#form-upload')[0].reset(); //reseta formulário  
 
                     setTimeout(function () {
