@@ -1,14 +1,15 @@
 <?php 
 
-require_once "../models/Noticias.php";
-require_once "../models/Albuns.php";
-require_once "../models/Fotos.php";
-require_once "../models/Videos.php";
+function my_autoload ($pClassName) {
+    include("../models/" . $pClassName . ".php");
+}
 
-$objNoticia = new Noticias();
-$objAlbum   = new Albuns();
-$objFoto    = new Fotos();
-$objVideo   = new Videos();
+spl_autoload_register("my_autoload");
+
+$oNoticia = new Noticias();
+$objAlbum = new Albuns();
+$objFoto  = new Fotos();
+$objVideo = new Videos();
 
 require_once "_header.php";
 require_once "menu.php"; 
@@ -77,7 +78,8 @@ require_once "menu.php";
         <div class="row">
             <div class="col-md-6">
                 <label for="tipoNoticia">Tipo Notícia:</label>
-                <select name="tipoNoticia" id="tipoNoticia" class="form-control">
+                <select required="" name="tipoNoticia" id="tipoNoticia" class="form-control">
+                    <option value="">SELECIONE</option>
                     <option value="N">Notícia</option>
                     <option value="A">Agenda</option>
                     <option value="E">Evento</option>
@@ -102,7 +104,7 @@ require_once "menu.php";
     <hr>
     <?php  
 
-    if($objNoticia->paginacao()["totalResult"] > 0):
+    if($oNoticia->paginacao()["totalResult"] > 0):
 
       ?>
 
@@ -121,13 +123,13 @@ require_once "menu.php";
             <tr>
                 <?php 
 
-                foreach ($objNoticia->paginacao()["objItens"] as $noticia) {
+                foreach ($oNoticia->paginacao()["objItens"] as $noticia) {
                   echo '<tr>';
                   echo '<td>'.$noticia["tituloNoticia"].'</td>'; 	
 						// echo '<td><img width="80" src="../'.$objFoto->selecionarFoto($noticia["idFoto"])->urlFoto.'" alt=""></td>';
                   echo '<td><img width="80" src="../'.$noticia["thumb_imagem"].'" alt=""></td>';
                   echo '<td>'.$objAlbum->selecionarAlbum($noticia["idAlbum"]).'</td>'; 			
-                  echo '<td>'.$objNoticia->formatDataPtbr($noticia["dataCaptura"]).'</td>'; 				 
+                  echo '<td>'.$oNoticia->formatDataPtbr($noticia["dataCaptura"]).'</td>'; 				 
                   echo '<td align="center"><a class="idNoticia apagar btn btn-danger" href='.$noticia["idNoticia"].'><i class="fa fa-close"></i></a> '; 
                   echo '<span class="btn btn-success" data-toggle="modal" data-target="#atualizarNoticia" 
                   onclick="adicionarDado('.$noticia["idNoticia"].',\''.$noticia["tituloNoticia"].'\')"><i class="fa fa-edit"></i></span>
@@ -142,7 +144,7 @@ require_once "menu.php";
       <!-- MOSTRANDO OS BOTÕES DA PAGINAÇÃO -->
       <?php 
 
-      echo $objNoticia->paginacao()["botoesPaginacao"]; 
+      echo $oNoticia->paginacao()["botoesPaginacao"]; 
 
   else:
    echo "Não há registro(s).";
@@ -155,11 +157,8 @@ endif;
 <script type="text/javascript">
 
     $(function(){
-        CKEDITOR.replace( 'conteudo' , {
-    language: 'fr',
-    uiColor: '#9AB8F3'
-});
-   });
+        CKEDITOR.replace('conteudo');
+    });
 
     function adicionarDado(idnoticia, titulofoto) {
 

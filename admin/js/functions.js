@@ -2,6 +2,7 @@ $(function () {
 
     /* MOSTRA DETALHES COMO USUARIO E SENHA DO BOX NA TELA INICIAL DO ADMIN.*/
     $('.btn-show-details').click(function(e) {
+        $('.show-details').removeClass('show-details-active');
         $(this).next().toggleClass('show-details-active');
     });
 
@@ -27,7 +28,6 @@ $(function () {
             inputCheck.prop('checked', true);
         }
     });
-
 
     /*FUNÇÃO PARA APAGAR VÁRIOS ITENS DE UMA VEZ*/
     $('#btApagarItem').click(function(event) {
@@ -64,7 +64,7 @@ $(function () {
   , function(){ 
     alertify.error('Cancelado');
 });
-  }); /* FIM */
+}); /* FIM */
 
 
     $('#idAlbum').change(function(event) { // Seta o campo nomeFoto com mesmo nome do album.
@@ -117,7 +117,7 @@ $(function () {
         });
     });
 
-    /*FUNÇÃO PARA VALIDAR FORMULÁRIOS*/
+    /*FUNÇÃO PARA VALIDAR FORMULÁRIOS COM SEUS CAMPOS*/
     function validarFormVazio(formulario) {
         dados = $('#' + formulario).serialize();
         d = dados.split('&');
@@ -135,11 +135,8 @@ $(function () {
     /*EXCLUINDO UM ALBUM*/
     $('.idAlbum.apagar').on('click', function (e) {
         e.preventDefault();
-
         var id = $(this).attr('href');
-
         alertify.confirm('Deseja excluir o album?', function () {
-
             $.ajax({
                 url: '../excluir-album.php',
                 type: 'POST',
@@ -151,13 +148,13 @@ $(function () {
             .done(function (r) {
 
              if (r == true) {
-                alertify.success('Excluído com sucesso!');
+                alertify.success('EXCLUÍDO COM SUCESSO!');
                 setTimeout(function () {
                     location.reload();
                 }, 1500);
 
             } else {
-                alertify.error('Erro ao excluir o registro!');
+                alertify.error('ERRO AO EXCLUIR O REGISTRO!');
                 return false;
             }
 
@@ -227,27 +224,25 @@ $(function () {
     })
 
 
-    //Insere noticia
-
+    /*INSERE NOTÍCIA*/
     $('#form-noticia').submit(function (e) {
         e.preventDefault();
 
+        for ( instance in CKEDITOR.instances )
+            CKEDITOR.instances[instance].updateElement();
+        
         if (typeof data === 'object') {
-
             var processData = false,
             cache = false,
             contentType = false;
-
             var formCompleto = document.getElementById('form-noticia');
 
             for (i = 0; i < formCompleto.length; i++) {
                 var campo = formCompleto[i].getAttribute('name');
                 var valor = formCompleto[i].value;
-
                 if (campo != 0 && campo != null && campo != "arquivo[]") {
                     data.append(campo, valor);
                 }
-
             }
 
         } else {
@@ -255,24 +250,21 @@ $(function () {
             data = $(this).serializeArray();
         }
 
-        $.ajax({
+        $.ajax({ /*FOCO*/ 
             url: '../salvar-noticia.php',
             data: data,
-            type: 'post',
+            type: 'POST',
             dataType: 'html',
             success: function (r) {
 
                 if (r == 1) {
-                    alertify.success('Inserido com sucesso!');
-
-                    $('#form-noticia')[0].reset(); //reseta formulário  
-
+                    alertify.success('INSERIDO COM SUCESSO!');
+                    $('#form-noticia')[0].reset(); /*RESETA FORMULÁRIO*/  
                     setTimeout(function () {
                         location.reload();
                     }, 1500);
                 } else {
-
-                    alertify.error('Houve algum problema.');
+                    alertify.error('FALHOU AO INSERIR REGISTRO.');
                     return false;
                 }
             },
