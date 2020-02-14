@@ -222,5 +222,10 @@
         duration: 500,
         reset: true
     });
+        sr.reveal('#sobre-nos .col-md-6', {
+        delay: 375,
+        duration: 500,
+        reset: true
+    });
 
 })(document, window);
