@@ -7,10 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>.: Adapt Contabilidade :.</title>
 
-  <meta name="author" content="FireFly Desenvolvimento">
-  <meta name="description" content="A Melhor Tecnologia em Site para Escritórios de Contabilidade com Atualizações Diárias, Tenha um Escritório Virtual.  0800 337 3376.">
-  <meta name="keywords" content="site de contabilidade, site contabilidade, site para contabilidade, site para contador, site contabil, contabilidade, contabil, sistema contabil, sistema para contabilidade, site exclusivo contabil, contábil, site para escritório de contabilidade, site para escritório contábil, virtual contabilidade, o que precisa para abrir um escritório de contabilidade, como conseguir clientes contabilidade, como abrir uma contabilidade, online contabilidade, Como conquistar clientes para escritório de contabilidade, novidades na contabilidade, mercado de contabilidade, site do contador, notícias contabilidade, abrir um escritório de contabilidade, site contabilista, escritório online">
-  <meta name="copyright" content="© 2019 Adapte Contabilidade" />
+  <meta name="author" content="Caio Silva">
+  <meta name="description" content="Escritório de Contabilidade Online 91 98863 2966">
+  <meta name="keywords" content="site de contabilidade, site para contabilidade, site para contador, site contabil, contabilidade, contabil, sistema contabil, site exclusivo contabil, contábil, site para escritório de contabilidade, site para escritório contábil, virtual contabilidade, o que precisa para abrir um escritório de contabilidade, como conseguir clientes contabilidade, como abrir uma contabilidade, online contabilidade, como conquistar clientes para escritório de contabilidade, novidades na contabilidade, mercado de contabilidade, site do contador, notícias contabilidade, site contabilista, escritório online">
+  <meta name="copyright" content="© 2020 Adapte Contabilidade" />
 
   <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link href="lib/fontawesome/all.min.css" rel="stylesheet">
@@ -18,6 +18,8 @@
   <link href="lib/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
   <link href="lib/slick/slick.css" rel="stylesheet" type="text/css">
   <link href="lib/slick/slick-theme.scss" rel="stylesheet" type="text/css">
+  
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
   <link href="assets/css/redes-socials.css" rel="stylesheet" type="text/css">
 
@@ -38,8 +40,8 @@
 
 <body>
 
-<!-- SCRIPT MYLIVECHAT -->
-<script type="text/javascript">function add_chatinline(){var hccid=24001066;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+  <!-- SCRIPT MYLIVECHAT -->
+  <script type="text/javascript">function add_chatinline(){var hccid=24001066;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
 add_chatinline(); </script>
 
 <!-- BOTÃO DO WHATSAPP -->
@@ -47,60 +49,60 @@ add_chatinline(); </script>
   <img src="assets/img/whatsapp.png" style="position:fixed; bottom: 48px; right: 25px; z-index:99999;">
 </a>
 
-  <!-- MODAL -->
-  <div class="modal fade" id="modalNoticia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><i class="far fa-newspaper"></i> Últimas notícias em <span class="show-data-captura"></span></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="show-titulo"></div>
-          <div class="show-conteudo"></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
-        </div>
+<!-- MODAL -->
+<div class="modal fade" id="modalNoticia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><i class="far fa-newspaper"></i> Últimas notícias em <span class="show-data-captura"></span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="show-titulo"></div>
+        <div class="show-conteudo"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
       </div>
     </div>
   </div>
+</div>
 
 
 
-  <div class="container">
-    <div class="row linha-top">
-      <div class="col-md-12 text-right">
-      </div>
+<div class="container">
+  <div class="row linha-top">
+    <div class="col-md-12 text-right">
     </div>
-    <div class="row title">
-      <div class="col-md-3 text-left">
-       <a href="./">
-        <img class="logo-header" src="assets/img/logo-adapte-contabilidade-horizontal.svg" alt="Adapte Contabilidade">
-      </a>
-     </div>
-     <div class="col-md-1">
+  </div>
+  <div class="row title">
+    <div class="col-md-3 text-left">
+     <a href="./">
+      <img class="logo-header" src="assets/img/logo-adapte-contabilidade-horizontal.svg" alt="Adapte Contabilidade">
+    </a>
+  </div>
+  <div class="col-md-1">
 
-    </div>
-    <div class="col-md-3">
-     <div class="custom">
-      <i class="fas fa-phone"></i>
-      <h3>TELEFONES DE CONTATO</h3>
-      <h4>91  98863 2966</h4>
-    </div>
   </div>
   <div class="col-md-3">
    <div class="custom">
-     <i class="fas fa-envelope"></i>
-     <h3>E-MAIL PARA CONTATO</h3>
-     <h4>contato@adaptcontabilidade.com.br</h4>
-   </div>
+    <i class="fas fa-phone"></i>
+    <h3>TELEFONES DE CONTATO</h3>
+    <h4>91  98863 2966</h4>
+  </div>
+</div>
+<div class="col-md-3">
+ <div class="custom">
+   <i class="fas fa-envelope"></i>
+   <h3>E-MAIL PARA CONTATO</h3>
+   <h4>contato@adaptcontabilidade.com.br</h4>
  </div>
+</div>
 
- <div class="col-md-2 text-right">
+<div class="col-md-2 text-right">
   <a href="#" target="_blank" class="icon-socials">
     <i class="fab fa-facebook-f"></i>
   </a>
@@ -122,7 +124,7 @@ add_chatinline(); </script>
   <div id="whatsapp"><a href="https://api.whatsapp.com/send?phone=5591981769979" target="_blank" class="fab fa-whatsapp"></a></div>
 </div> -->
 
- 
+
 <div class="head">
   <div class="nav-menu" id="nav">
    <div class="logo-mobile"><img src="assets/img/logo-adapte-contabilidade-branco.png"></div>
@@ -136,27 +138,41 @@ add_chatinline(); </script>
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
       <div class="sub-menu">
         <ul>
-          <li class="efeito-hr"><a href="advogados">&raquo; Advogados<hr></a></li>
-          <li class="efeito-hr"><a href="arquitetos">&raquo; Arquitetos<hr></a></li>
-          <li class="efeito-hr"><a href="abrir-empresas">&raquo; Abrir Empresas<hr></a></li>
-          <li class="efeito-hr"><a href="empregador-domestico">&raquo; Empregador Doméstico<hr></a></li>
-          <li class="efeito-hr"><a href="engenheiros">&raquo; Engenheiros<hr></a></li>
-          <li class="efeito-hr"><a href="escolas">&raquo; Escolas<hr></a></li>
-          <li class="efeito-hr"><a href="empresas-de-ti">&raquo; Empresas de T.I<hr></a></li>
-          <li class="efeito-hr"><a href="migrar-empresas">&raquo; Migrar Empresas<hr></a></li>
-          <li class="efeito-hr"><a href="medicos">&raquo; Médicos<hr></a></li>
-          <li class="efeito-hr"><a href="mei">&raquo; MEI<hr></a></li>
-          <li class="efeito-hr"><a href="salao-de-beleza">&raquo; Salão de beleza<hr></a></li>
-          <li class="efeito-hr"><a href="pet">&raquo; PET<hr></a></li>
-          <li class="efeito-hr"><a href="profissionais-liberais">&raquo; Profissionais Liberais<hr></a></li>
-          <li class="efeito-hr"><a href="representante-comerciais">&raquo; Representantes Comerciais<hr></a></li>
-          <li class="efeito-hr"><a href="regularizar-empresa">&raquo; Regularizar Empresa<hr></a></li>
+          <li class="efeito-hr"><a href="advogados"> Advogados</a></li>
+          <li class="efeito-hr"><a href="arquitetos"> Arquitetos</a></li>
+          <li class="efeito-hr"><a href="abrir-empresas"> Abrir Empresas</a></li>
+          <li class="efeito-hr"><a href="empregador-domestico"> Empregador Doméstico</a></li>
+          <li class="efeito-hr"><a href="engenheiros"> Engenheiros</a></li>
+          <li class="efeito-hr"><a href="escolas"> Escolas</a></li>
+          <li class="efeito-hr"><a href="empresas-de-ti"> Empresas de T.I</a></li>
+          <li class="efeito-hr"><a href="migrar-empresas"> Migrar Empresas</a></li>
+          <li class="efeito-hr"><a href="medicos"> Médicos</a></li>
+          <li class="efeito-hr"><a href="mei"> MEI</a></li>
+          <li class="efeito-hr"><a href="salao-de-beleza"> Salão de beleza</a></li>
+          <li class="efeito-hr"><a href="pet"> PET</a></li>
+          <li class="efeito-hr"><a href="profissionais-liberais"> Profissionais Liberais</a></li>
+          <li class="efeito-hr"><a href="representante-comerciais"> Representantes Comerciais</a></li>
+          <li class="efeito-hr"><a href="regularizar-empresa"> Regularizar Empresa</a></li>
         </ul>
       </div>
     </li>
     <li class="efeito-hr"><a href="#parceiros">Parceiros<hr></a></li>
     <li class="efeito-hr"><a href="#depoimentos">Depoimentos<hr></a></li>
-    <li class="efeito-hr"><a href="#footer">Fale Conosco<hr></a></li>
+    <li class="titulo-submenu"> <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      <a >Soluções</a>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      <div class="sub-menu">
+        <ul>
+          <li class="efeito-hr"><a href="gestao-contabil"> Gestão Contábil</a></li>
+          <li class="efeito-hr"><a href="gestao-de-pessoal"> Gestão de Pessoal</a></li>
+          <li class="efeito-hr"><a href="gestao-tributaria"> Gestão Tributária</a></li>
+          <li class="efeito-hr"><a href="gestao-financeira"> Gestão Financeira</a></li>          
+        </ul>
+      </div>
+    </li>
+
+
     <li><a class="btn btn-danger" href="#fale-conosco">PROPOSTA ONLINE</a></li>
   </ul>
 

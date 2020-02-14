@@ -3,10 +3,10 @@
 <!-- CAROUSEL -->
 <div id="owl-demo" class="owl-carousel owl-theme">
 
-  <!-- <div class="item"><img src="assets/img/banner-06.jpg" alt=""></div> -->
-  <!-- <div class="item"><img src="assets/img/banner-04.jpg" alt=""></div> -->
+  <div class="item"><img src="assets/img/banner-07.jpg" alt=""></div>
+  <div class="item"><img src="assets/img/banner-04.jpg" alt=""></div>
   <div class="item"><img src="assets/img/banner-01.jpg" alt=""></div>
-  <div class="item"><img src="assets/img/banner-02.jpg" alt=""></div>
+  <!-- <div class="item"><img src="assets/img/banner-02.jpg" alt=""></div> -->
   <!-- <div class="item"><img src="assets/img/banner-03.jpg" alt=""></div> -->
 
 </div>
@@ -14,52 +14,59 @@
 
 <section>
 
-<div id="tres-servicos">
-  <h2>Serviços</h2>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="box-servicos"><a href="#">ABRIR EMPRESAS</a></div>
-      </div>
-      <div class="col-md-4">
+  <div id="tres-servicos">
+    <h2>Serviços</h2>
+    <hr>
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-4">
+          <div class="box-servicos">
+           <i class="fas fa-door-open"></i><br/>
+           <a href="#">ABRIR EMPRESAS</a>
+         </div>
+       </div>
+
        <div class="col-md-4">
-        <div class="box-servicos"><a href="#">MIGRAR EMPRESAS</a></div>
+        <div class="box-servicos">
+          <i class="fas fa-exchange-alt"></i><br/>
+          <a href="#">MIGRAR EMPRESAS</a></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="box-servicos">
+            <i class="fas fa-check-double"></i><br/>
+            <a href="#">REGULARIZAR EMPRESA</a></div>
+          </div>
+
+        </div>
       </div>
     </div>
-    <div class="col-md-4">
-     <div class="col-md-4">
-      <div class="box-servicos"><a href="#">REGULARIZAR EMPRESA</a></div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
- <div id="sobre-nos">
-  <div class="container">
-   <h2>Sobre nós</h2>
-   <hr><br>
-   <div class="row">
-    <div class="col-md-6">
-      <p class="small">O que fazemos?</p>
-      <h3>Assessoria e Consultoria em Contabilidade</h3>
-      <p>A Adapt Contabilidade é uma empresa especializada na prestação de serviços nas áreas Contábil, Fiscal/Tributária, Administração de pessoal, Societária e Consultoria empresarial.
-      </p>
-      <p>Nosso propósito é demonstrar de maneira prática ao empresário a importância da contabilidade para o seu negócio, para isso contamos com uma equipe de profissionais qualificados em cada área de atuação, com escritório inteiramente informatizado, pronto a integrar-se ao cliente, de modo rápido, eficiente e seguro.</p>
-    </div>
-    <div class="col-md-6">
-      <img src="assets/img/sobre-nos.png" alt="Imagem Business" class="img-responsive">
+    <div id="sobre-nos">
+      <div class="container">
+       <h2>Sobre nós</h2>
+       <hr><br>
+       <div class="row">
+        <div class="col-md-6">
+          <p class="small">O que fazemos?</p>
+          <h3>Assessoria e Consultoria em Contabilidade</h3>
+          <p>A Adapt Contabilidade é uma empresa especializada na prestação de serviços nas áreas Contábil, Fiscal/Tributária, Administração de pessoal, Societária e Consultoria empresarial.
+          </p>
+          <p>Nosso propósito é demonstrar de maneira prática ao empresário a importância da contabilidade para o seu negócio, para isso contamos com uma equipe de profissionais qualificados em cada área de atuação, com escritório inteiramente informatizado, pronto a integrar-se ao cliente, de modo rápido, eficiente e seguro.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/img/sobre-nos.png" alt="Imagem Business" class="img-responsive">
+        </div>
+      </div>
+
     </div>
   </div>
 
-</div>
-</div>
 
-
-<!-- Enquete -->
-<!-- <div id="enquete"> -->
-  <!-- <h2><i class="fas fa-poll-h"></i> Enquete</h2> -->
-  <!-- <hr> -->
+  <!-- Enquete -->
+  <!-- <div id="enquete"> -->
+    <!-- <h2><i class="fas fa-poll-h"></i> Enquete</h2> -->
+    <!-- <hr> -->
 <!--   <div class="container">
 
     <div class="row">
@@ -264,38 +271,38 @@
                       <select name="cidade" id="cidade" class="form-control" aria-required="true" required>
                         <option value="">SELECIONE SUA CIDADE</option>
                         <optgroup label="Pará">
-                            <option value="Belém">Belém (Capital)</option>
-                            <option value="Ananindeua">Ananindeua</option>
-                            <option value="Santarém">Santarém</option>
-                            <option value="Marabá">Marabá</option>
-                            <option value="3543Parauapebas402">Parauapebas</option>                  
+                          <option value="Belém">Belém (Capital)</option>
+                          <option value="Ananindeua">Ananindeua</option>
+                          <option value="Santarém">Santarém</option>
+                          <option value="Marabá">Marabá</option>
+                          <option value="3543Parauapebas402">Parauapebas</option>                  
                         </optgroup>
                         <optgroup label="São Paulo">
-                            <option value="São Paulo">São Paulo (Capital)</option>
-                            <option value="Guarulhos">Guarulhos</option>
-                            <option value="Santana de Parnaíba">Santana de Parnaíba</option>
-                            <option value="Ribeirão Preto">Ribeirão Preto</option>
-                            <option value="São José do Rio Preto">São José do Rio Preto</option>
-                            <option value="São José dos Campos">São José dos Campos</option>
-                            <option value="São Bernardo do Campo">São Bernardo do Campo</option>
-                            <option value="Santo André">Santo André</option>
+                          <option value="São Paulo">São Paulo (Capital)</option>
+                          <option value="Guarulhos">Guarulhos</option>
+                          <option value="Santana de Parnaíba">Santana de Parnaíba</option>
+                          <option value="Ribeirão Preto">Ribeirão Preto</option>
+                          <option value="São José do Rio Preto">São José do Rio Preto</option>
+                          <option value="São José dos Campos">São José dos Campos</option>
+                          <option value="São Bernardo do Campo">São Bernardo do Campo</option>
+                          <option value="Santo André">Santo André</option>
                         </optgroup>
                         <optgroup label="Rio de Janeiro">
-                            <option value="Rio de Janeiro">Rio de Janeiro (Capital)</option>
-                            <option value="São Gonçalo">São Gonçalo</option>
+                          <option value="Rio de Janeiro">Rio de Janeiro (Capital)</option>
+                          <option value="São Gonçalo">São Gonçalo</option>
                         </optgroup>
                         <optgroup label="Distrito Federal">
-                            <option value="Brasília">Brasília (Capital)</option>
+                          <option value="Brasília">Brasília (Capital)</option>
                         </optgroup>
                         <optgroup label="Bahia">
-                            <option value="Salvador">Salvador (Capital)</option>
-                            <option value="Lauro de Freitas">Lauro de Freitas</option>
+                          <option value="Salvador">Salvador (Capital)</option>
+                          <option value="Lauro de Freitas">Lauro de Freitas</option>
                         </optgroup>
                         <optgroup label="Minas Gerais">
-                            <option value="Belo Horizonte">Belo Horizonte (Capital)</option>
+                          <option value="Belo Horizonte">Belo Horizonte (Capital)</option>
                         </optgroup>
                         <option value="Minha cidade não consta na lista">Minha cidade não consta na lista...</option>
-                    </select>
+                      </select>
                     </div>
 
                     <div class="form-group">
