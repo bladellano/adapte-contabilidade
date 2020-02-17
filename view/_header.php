@@ -149,9 +149,10 @@ add_chatinline(); </script>
       <div class="sub-menu">
         <ul>
           <li class="efeito-hr"><a href="gestao-contabil"> Gestão Contábil</a></li>
-          <li class="efeito-hr"><a href="gestao-de-pessoal"> Gestão de Pessoal</a></li>
-          <li class="efeito-hr"><a href="gestao-tributaria"> Gestão Tributária</a></li>
           <li class="efeito-hr"><a href="gestao-financeira"> Gestão Financeira</a></li>          
+          <li class="efeito-hr"><a href="gestao-de-pessoal"> Gestão Departamento Pessoal</a></li>
+          <li class="efeito-hr"><a href="gestao-fiscal-tributaria"> Gestão Fiscal/Tributária</a></li>
+          <li class="efeito-hr"><a href="declaracao-de-imposto-de-renda"> Declaração de Imposto de Renda</a></li>          
         </ul>
       </div>
 
@@ -170,7 +171,7 @@ add_chatinline(); </script>
             <li class="efeito-hr"><a href="medicos"> Médicos</a></li>
             <li class="efeito-hr"><a href="mei"> MEI</a></li>
             <li class="efeito-hr"><a href="salao-de-beleza"> Salão de beleza</a></li>
-            <li class="efeito-hr"><a href="pet"> PET</a></li>
+            <li class="efeito-hr"><a href="pet-shop"> PET</a></li>
             <li class="efeito-hr"><a href="profissionais-liberais"> Profissionais Liberais</a></li>
             <li class="efeito-hr"><a href="representante-comerciais"> Representantes Comerciais</a></li>
           </ul>

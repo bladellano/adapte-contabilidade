@@ -26,6 +26,9 @@
       <ul>
         <?php 
 
+        $sql = new Sql(); 
+        $data['noticias'] = $sql->select("SELECT * FROM tb_noticias ORDER BY idNoticia DESC LIMIT 4");
+
         foreach ($data['noticias'] as $noticia):
           extract($noticia);
           ?>

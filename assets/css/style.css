@@ -806,7 +806,7 @@ body {
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
-.bg-fale-conosco-pg-default {
+.bg-pg-default {
     background-image: url('../../assets/img/bg-pagina.jpg');
     background-position: center top;
     background-repeat: no-repeat;
@@ -818,17 +818,40 @@ body {
     position: relative;
 }
 
-.bg-fale-conosco-pg-default h6 {
+.bg-pg-default h6 {
     position: absolute;
     bottom: 0px;
 }
 
-.bg-fale-conosco-pg-default .container h6 a {
+.bg-pg-default .container h6 a {
     color: #FFF;
 }
 
-.bg-fale-conosco-pg-default .container h6 a:hover {
+.bg-pg-default .container h6 a:hover {
     color: var(--cor-color-principal);
+}
+.pg-content h3 {
+    font-size: 34px;
+    color:var(--cor-color-principal);
+}
+.pg-content a {
+    font-size: 28px;
+}
+.pg-content ol {
+margin-left: 90px;
+}
+.pg-content p {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.jumbotron span{
+    letter-spacing: -1px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.jumbotron{
+    background-color: #C8FF03;
 }
 
 h3.border-bottom.border-gray {
@@ -978,7 +1001,7 @@ h3.border-bottom.border-gray {
     display: block;
     position: absolute;
     background: var(--cor-color-principal);
-    margin-top: 12px;
+    margin-top: 8px;
     margin-left: -15px;
 }
 
@@ -994,7 +1017,7 @@ h3.border-bottom.border-gray {
     padding-left:10px;
     border-radius: 0;
     text-align: left;
-    width: 220px;  
+    width: 280px;  
 }
 
 .nav-links li:hover .sub-menu ul li:last-child {

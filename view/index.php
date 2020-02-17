@@ -13,9 +13,9 @@
       <div class="carousel-caption">
         <h3>Contabilidade Digital com Gestão Financeira Integrada</h3>
         <p>Somos um time especialista que usa a tecnologia para simplificar o seu dia e fazer a sua empresa ser mais eficiente e lucrativa</p>
-        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">ABRIR EMPRESA</a>
-        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">MIGRAR EMPRESA</a>
-        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">REGULARIZAR EMPRESA</a>
+        <a href="abrir-empresa" class="btn btn-outline-light btn-lg">ABRIR EMPRESA</a>
+        <a href="migrar-empresa" class="btn btn-outline-light btn-lg">MIGRAR EMPRESA</a>
+        <a href="regularizar-empresa" class="btn btn-outline-light btn-lg">REGULARIZAR EMPRESA</a>
       </div>
     </div>
 
@@ -24,9 +24,9 @@
       <div class="carousel-caption">
         <h3>Contabilidade Digital com Gestão Financeira Integrada</h3>
         <p>Somos um time especialista que usa a tecnologia para simplificar o seu dia e fazer a sua empresa ser mais eficiente e lucrativa</p>
-        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">ABRIR EMPRESA</a>
-        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">MIGRAR EMPRESA</a>
-        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">REGULARIZAR EMPRESA</a>
+        <a href="abrir-empresa" class="btn btn-outline-light btn-lg">ABRIR EMPRESA</a>
+        <a href="migrar-empresa" class="btn btn-outline-light btn-lg">MIGRAR EMPRESA</a>
+        <a href="regularizar-empresa" class="btn btn-outline-light btn-lg">REGULARIZAR EMPRESA</a>
       </div>
     </div> 
   </div>
