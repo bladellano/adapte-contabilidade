@@ -8,8 +8,23 @@ Desenvolvimento FireFly
 :root {
     --cor-color-principal: #273C75;
     --cor-color-secundaria: #EB4118;
-    --cor-bg-principal: #FFFFFF;
+    --cor-bg-principal: #FFF;
 }
+/*CUSTOMIZANDO CAROUSEL*/
+.carousel-caption .btn{
+    border:1px solid #FFF;
+}
+.carousel-caption h3{
+    font-size: 34px;
+}
+.carousel-caption{
+    text-align: left;
+    width: 600px;
+    right: 0;
+    left: 44%;
+    padding-bottom: 200px;
+}
+/*FIM*/
 
 * {
     padding: 0px;
@@ -253,7 +268,7 @@ body {
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #sobre-nos {
-    background-color: #191919;
+    background-color: #FFF;
 }
 #sobre-nos img {
     max-width: 98%;
@@ -263,31 +278,29 @@ body {
 #sobre-nos p {
     text-align: right;
     line-height: 35px;
-    color:#FFF;
+    color:#000;
 }
 
 #sobre-nos h3 {
     text-align: right;
-    color:#FFF;
+    color:#000;
 }
 
 #sobre-nos h2 i {
     font-size: 26px;
-    color:#FFF;
+    color:#000;
 }
 
 #sobre-nos h2 {
     margin-top: 20px;
     text-align: center;
-    color: #333;
+    color: #000;
     text-transform: uppercase;
-    color:#FFF;
 }
 
 #sobre-nos hr {
-    border: 2px solid #FFF;
+    border: 2px solid #000;
     width: 100px;
-
     margin: 0 auto;
 }
 
@@ -430,8 +443,8 @@ body {
 }
 
 .box-servicos i.fas{
-font-size:33px;
-margin-bottom: 10px;
+    font-size:33px;
+    margin-bottom: 10px;
 }
 .box-servicos a {
     color: #FFF;

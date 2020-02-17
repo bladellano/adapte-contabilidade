@@ -23,6 +23,19 @@
 
   <link href="assets/css/redes-socials.css" rel="stylesheet" type="text/css">
 
+  <!-- <link href="https://getbootstrap.com/docs/4.4/examples/carousel/carousel.css" rel="stylesheet" type="text/css"> -->
+
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
   <!-- Default theme -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
@@ -115,7 +128,6 @@ add_chatinline(); </script>
 
 </div>
 
-
 </div>
 </div><!--CONTAINER-->
 
@@ -124,40 +136,12 @@ add_chatinline(); </script>
   <div id="whatsapp"><a href="https://api.whatsapp.com/send?phone=5591981769979" target="_blank" class="fab fa-whatsapp"></a></div>
 </div> -->
 
-
 <div class="head">
   <div class="nav-menu" id="nav">
    <div class="logo-mobile"><img src="assets/img/logo-adapte-contabilidade-branco.png"></div>
    <ul class="nav-links">
     <li class="efeito-hr"><a href="./">Home<hr></a></li>
     <li class="efeito-hr"><a href="#sobre-nos">Sobre nós<hr></a></li>
-
-    <li class="titulo-submenu"> <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
-      <i class="fa fa-chevron-left" aria-hidden="true"></i>
-      <a >Especialidade</a>
-      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-      <div class="sub-menu">
-        <ul>
-          <li class="efeito-hr"><a href="advogados"> Advogados</a></li>
-          <li class="efeito-hr"><a href="arquitetos"> Arquitetos</a></li>
-          <li class="efeito-hr"><a href="abrir-empresas"> Abrir Empresas</a></li>
-          <li class="efeito-hr"><a href="empregador-domestico"> Empregador Doméstico</a></li>
-          <li class="efeito-hr"><a href="engenheiros"> Engenheiros</a></li>
-          <li class="efeito-hr"><a href="escolas"> Escolas</a></li>
-          <li class="efeito-hr"><a href="empresas-de-ti"> Empresas de T.I</a></li>
-          <li class="efeito-hr"><a href="migrar-empresas"> Migrar Empresas</a></li>
-          <li class="efeito-hr"><a href="medicos"> Médicos</a></li>
-          <li class="efeito-hr"><a href="mei"> MEI</a></li>
-          <li class="efeito-hr"><a href="salao-de-beleza"> Salão de beleza</a></li>
-          <li class="efeito-hr"><a href="pet"> PET</a></li>
-          <li class="efeito-hr"><a href="profissionais-liberais"> Profissionais Liberais</a></li>
-          <li class="efeito-hr"><a href="representante-comerciais"> Representantes Comerciais</a></li>
-          <li class="efeito-hr"><a href="regularizar-empresa"> Regularizar Empresa</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="efeito-hr"><a href="#parceiros">Parceiros<hr></a></li>
-    <li class="efeito-hr"><a href="#depoimentos">Depoimentos<hr></a></li>
     <li class="titulo-submenu"> <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
       <i class="fa fa-chevron-left" aria-hidden="true"></i>
       <a >Soluções</a>
@@ -170,6 +154,31 @@ add_chatinline(); </script>
           <li class="efeito-hr"><a href="gestao-financeira"> Gestão Financeira</a></li>          
         </ul>
       </div>
+
+      <li class="titulo-submenu"> <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        <a >Especialidades</a>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        <div class="sub-menu">
+          <ul>
+            <li class="efeito-hr"><a href="advogados"> Advogados</a></li>
+            <li class="efeito-hr"><a href="arquitetos"> Arquitetos</a></li>
+            <li class="efeito-hr"><a href="empregador-domestico"> Empregador Doméstico</a></li>
+            <li class="efeito-hr"><a href="engenheiros"> Engenheiros</a></li>
+            <li class="efeito-hr"><a href="escolas"> Escolas</a></li>
+            <li class="efeito-hr"><a href="empresas-de-ti"> Empresas de T.I</a></li>
+            <li class="efeito-hr"><a href="medicos"> Médicos</a></li>
+            <li class="efeito-hr"><a href="mei"> MEI</a></li>
+            <li class="efeito-hr"><a href="salao-de-beleza"> Salão de beleza</a></li>
+            <li class="efeito-hr"><a href="pet"> PET</a></li>
+            <li class="efeito-hr"><a href="profissionais-liberais"> Profissionais Liberais</a></li>
+            <li class="efeito-hr"><a href="representante-comerciais"> Representantes Comerciais</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="efeito-hr"><a href="#parceiros">Parceiros<hr></a></li>
+      <li class="efeito-hr"><a href="#depoimentos">Depoimentos<hr></a></li>
+
     </li>
 
 

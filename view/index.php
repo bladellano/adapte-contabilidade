@@ -1,25 +1,66 @@
 <?php include_once "_header.php";?>
 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- INDICATORS -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+  <!-- WRAPPER FOR SLIDES -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="assets/img/banner-07.jpg" alt="CONTABILIDADE" style="width: 100%">
+      <div class="carousel-caption">
+        <h3>Contabilidade Digital com Gestão Financeira Integrada</h3>
+        <p>Somos um time especialista que usa a tecnologia para simplificar o seu dia e fazer a sua empresa ser mais eficiente e lucrativa</p>
+        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">ABRIR EMPRESA</a>
+        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">MIGRAR EMPRESA</a>
+        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">REGULARIZAR EMPRESA</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="assets/img/banner-08.jpg" alt="CONTABILIDADE" style="width: 100%">
+      <div class="carousel-caption">
+        <h3>Contabilidade Digital com Gestão Financeira Integrada</h3>
+        <p>Somos um time especialista que usa a tecnologia para simplificar o seu dia e fazer a sua empresa ser mais eficiente e lucrativa</p>
+        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">ABRIR EMPRESA</a>
+        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">MIGRAR EMPRESA</a>
+        <a href="#fale-conosco" class="btn btn-outline-light btn-lg">REGULARIZAR EMPRESA</a>
+      </div>
+    </div> 
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
 <!-- CAROUSEL -->
-<div id="owl-demo" class="owl-carousel owl-theme">
+<!-- <div id="owl-demo" class="owl-carousel owl-theme">
 
   <div class="item"><img src="assets/img/banner-07.jpg" alt=""></div>
   <div class="item"><img src="assets/img/banner-04.jpg" alt=""></div>
   <div class="item"><img src="assets/img/banner-01.jpg" alt=""></div>
-  <!-- <div class="item"><img src="assets/img/banner-02.jpg" alt=""></div> -->
-  <!-- <div class="item"><img src="assets/img/banner-03.jpg" alt=""></div> -->
 
-</div>
+</div> -->
 <!-- END CAROUSEL -->
 
 <section>
 
-  <div id="tres-servicos">
+<!--   <div id="tres-servicos">
     <h2>Serviços</h2>
     <hr>
     <div class="container">
       <div class="row">
-        
+
         <div class="col-md-4">
           <div class="box-servicos">
            <i class="fas fa-door-open"></i><br/>
@@ -41,7 +82,9 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
+
+
     <div id="sobre-nos">
       <div class="container">
        <h2>Sobre nós</h2>
@@ -144,15 +187,10 @@
   <div class="container">
 
    <div class="slick-parceiros">
-    <div><img src="assets/img/eagle-sports.png" alt=""></div>
-    <div><img src="assets/img/alba-logo.png" alt=""></div>
-    <div><img src="assets/img/burger-king-logo.png" alt=""></div>
-    <div><img src="assets/img/eagle-sports.png" alt=""></div>
-    <div><img src="assets/img/alba-logo.png" alt=""></div>
-    <div><img src="assets/img/burger-king-logo.png" alt=""></div>
-    <div><img src="assets/img/eagle-sports.png" alt=""></div>
-    <div><img src="assets/img/alba-logo.png" alt=""></div>
-    <div><img src="assets/img/burger-king-logo.png" alt=""></div>
+    <div><img src="assets/img/logo-sci.png" alt=""></div>
+    <div><img src="assets/img/logo-omie.png" alt=""></div>
+    <div><img src="assets/img/logo-sage.png" alt=""></div>
+    <div><img src="assets/img/logo-e-auditoria.png" alt=""></div>
 
   </div>
 
