@@ -6,25 +6,25 @@ use PHPMailer\PHPMailer\Exception;
 
 require("vendor/autoload.php");
 
-define('SMTP_USER', 'contato@nortemaquinaspara.com.br');
+define('SMTP_USER', 'nortesite2018@gmail.com');
 // define('SMTP_USER', 'contato@rosadesaroncolegio.com.br');
 // define('SMTP_USER', 'contato@adaptecontabilidade.com.br');
 define('SMTP_PASS', 'norte059924');
 // define('SMTP_PASS', 'nt1@2012');
 // define('SMTP_PASS', 'Admin2020!');
-define('SMTP_HOST', 'nortemaquinaspara.com.br');
+define('SMTP_HOST', 'smtp.gmail.com');
 // define('SMTP_HOST', 'mail.paideiaeducacional.com.br');
 // define('SMTP_PORT', 465); 
-// define('SMTP_PORT', 587); 
-define('SMTP_PORT', 25); 
+define('SMTP_PORT', 587); 
+// define('SMTP_PORT', 25); 
 
 class Mail{
 
 	public function send($para, $de, $de_nome, $assunto, $corpo) {
 		
 		$mail = new PHPMailer();
-		// $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
-		$mail->SMTPSecure = 'ssl';    
+		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
+		// $mail->SMTPSecure = 'ssl';    
 		// $mail->SMTPSecure = 'tls';    
 		// $mail->SMTPDebug = SMTP::DEBUG_SERVER;   
 		$mail->IsSMTP();		// Ativar SMTP
