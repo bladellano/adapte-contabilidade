@@ -18,7 +18,7 @@ class Mail{
 		$mail = new PHPMailer();
 		$mail->IsSMTP();		/*ATIVAR SMTP*/
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
-		 $mail->SMTPDebug = SMTP::DEBUG_SERVER;  
+		 // $mail->SMTPDebug = SMTP::DEBUG_SERVER;  
 		$mail->CharSet = 'UTF-8';		 
 		$mail->isHTML(true); 
 		$mail->SMTPAuth = true; /*AUTENTICAÇÃO*/		
