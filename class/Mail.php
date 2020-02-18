@@ -6,10 +6,10 @@ use PHPMailer\PHPMailer\Exception;
 
 require("vendor/autoload.php");
 
-define('SMTP_USER', 'nortesite2018@gmail.com');
+define('SMTP_USER', 'bladellano@gmail.com');
 // define('SMTP_USER', 'contato@rosadesaroncolegio.com.br');
 // define('SMTP_USER', 'contato@adaptecontabilidade.com.br');
-define('SMTP_PASS', 'norte059924');
+define('SMTP_PASS', 'nt1@2012');
 // define('SMTP_PASS', 'nt1@2012');
 // define('SMTP_PASS', 'Admin2020!');
 define('SMTP_HOST', 'smtp.gmail.com');
