@@ -49,6 +49,7 @@ class Mail{
 		$mail->Subject = $assunto;
 		$mail->Body = $corpo;
 		$mail->AddAddress($para);
+		$mail->AddReplyTo('bladellano@yahoo.com.br', 'CAIO');
 		// $mail->AddAddress('bladellano@yahoo.com.br');
 
 		if(!$mail->Send()) {
