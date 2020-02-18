@@ -25,8 +25,8 @@ class Mail{
 
 	public function send($para, $de, $de_nome, $assunto, $corpo) {
 	 
- echo $para;
- 
+ echo $para."\n";
+
 		$mail = new PHPMailer();
 		$mail->IsSMTP();		// Ativar SMTP
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
@@ -45,7 +45,8 @@ class Mail{
 		$mail->Password = SMTP_PASS;
 
 		//Variáveis da mensagem, remetente, assunto, mensagem e destinatário.
-		$mail->SetFrom($de, $de_nome);
+		// $mail->SetFrom($de, $de_nome);
+		$mail->SetFrom($para, $de_nome);
 		$mail->Subject = $assunto;
 		$mail->Body = $corpo;
 		$mail->AddAddress($para);
