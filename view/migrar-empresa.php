@@ -15,7 +15,9 @@ $tituloPg = "Migrar Empresa";
 
   <h3 class="border-bottom border-gray"><?=$tituloPg?></h3>
 
-  <p class="text-justify"><h2 class="display-2 text-success">Mude para a Adapt Contabilidade</h2><br> Que tal migrar a contabilidade da sua empresa para a contabilidade digital?  
+  <p class="text-justify">
+  	<h2 class="alert alert-success">Mude para a Adapt Contabilidade!</h2>
+  <p><b>Que tal migrar a contabilidade da sua empresa para a contabilidade da ADAPT?</b></p>
   </p>  
   <p class="text-justify">Para que esse processo de transição seja feito corretamente, algumas obrigações e documentos devem ser entregues, mantendo a organização financeira da empresa. Na Adapt Contabilidade cuidamos de todo este procedimento para você de forma rápida e descomplicada. Fale com a gente para saber mais sobre o serviço de Migração de Contabilidade que oferecemos.</p>
 

@@ -9,10 +9,11 @@
     <title>.: Adapt Contabilidade :.</title>
 
     <meta name="author" content="Caio Silva">
-    <meta name="description" content="Escritório de Contabilidade Online 91 98863 2966">
-    <meta name="keywords" content="site de contabilidade, site para contabilidade, site para contador, site contabil, contabilidade, contabil, sistema contabil, site exclusivo contabil, contábil, site para escritório de contabilidade, site para escritório contábil, virtual contabilidade, o que precisa para abrir um escritório de contabilidade, como conseguir clientes contabilidade, como abrir uma contabilidade, online contabilidade, como conquistar clientes para escritório de contabilidade, novidades na contabilidade, mercado de contabilidade, site do contador, notícias contabilidade, site contabilista, escritório online">
+    <meta name="description" content="Escritório de Contabilidade Online (91) 98863 2966, Belém-PA">
+    <meta name="keywords" content="site de contabilidade, site para contador, site contabil, contabilidade, contabil, site exclusivo contabil, contábil, virtual contabilidade, o que precisa para abrir uma empresa, regularizar, como conseguir clientes contabilidade, como abrir uma contabilidade, online contabilidade, novidades na contabilidade, mercado de contabilidade, site do contador, notícias contabilidade, site contabilista, escritório online, contabilidade em Belém, Belém, Pará, Ananindeua, Brasil">
     <meta name="copyright" content="© 2020 Adapte Contabilidade" />
-
+    
+    <link rel="shortcut icon" href="assets/favicon-adapt/favicon-32x32.png" />
     <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="lib/fontawesome/all.min.css" rel="stylesheet">
     <link href="lib/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
@@ -44,158 +45,169 @@
 
     <!-- SCRIPT MYLIVECHAT -->
     <script type="text/javascript">
-    function add_chatinline() {
-        var hccid = 24001066;
-        var nt = document.createElement("script");
-        nt.async = true;
-        nt.src = "https://mylivechat.com/chatinline.aspx?hccid=" + hccid;
-        var ct = document.getElementsByTagName("script")[0];
-        ct.parentNode.insertBefore(nt, ct);
-    }
-    add_chatinline();
+        function add_chatinline() {
+            var hccid = 24001066;
+            var nt = document.createElement("script");
+            nt.async = true;
+            nt.src = "https://mylivechat.com/chatinline.aspx?hccid=" + hccid;
+            var ct = document.getElementsByTagName("script")[0];
+            ct.parentNode.insertBefore(nt, ct);
+        }
+        add_chatinline();
     </script>
 
-    <!-- BOTÃO DO WHATSAPP -->
-    <a href="https://api.whatsapp.com/send?l=pt&phone=5591988632966" target="_blank">
-        <img src="assets/img/whatsapp.png" style="position:fixed; bottom: 48px; right: 25px; z-index:99999;">
-    </a>
+    <!-- GLOBAL SITE TAG (GTAG.JS) - GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158759841-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <!-- MODAL -->
-    <div class="modal fade" id="modalNoticia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="far fa-newspaper"></i> Últimas notícias em <span
-                            class="show-data-captura"></span></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="show-titulo"></div>
-                    <div class="show-conteudo"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
-                </div>
+      gtag('config', 'UA-158759841-1');
+  </script>
+
+
+  <!-- BOTÃO DO WHATSAPP -->
+  <a href="https://api.whatsapp.com/send?l=pt&phone=5591988632966" target="_blank">
+    <img src="assets/img/whatsapp.png" style="position:fixed; bottom: 48px; right: 25px; z-index:99999;">
+</a>
+
+<!-- MODAL -->
+<div class="modal fade" id="modalNoticia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title"><i class="far fa-newspaper"></i> Últimas notícias em <span
+                class="show-data-captura"></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="show-titulo"></div>
+                <div class="show-conteudo"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
             </div>
         </div>
     </div>
+</div>
 
 
 
-    <div class="container">
-        <div class="row linha-top">
-            <div class="col-md-12 text-right">
-            </div>
-        </div>
-        <div class="row title">
-            <div class="col-md-3 text-left">
-                <a href="./">
-                    <img class="logo-header" src="assets/img/logo-adapte-contabilidade-horizontal.svg"
-                        alt="Adapte Contabilidade">
-                </a>
-            </div>
-            <div class="col-md-1">
-
-            </div>
-            <div class="col-md-3">
-                <div class="custom">
-                    <i class="fas fa-phone"></i>
-                    <h3>TELEFONES DE CONTATO</h3>
-                    <h4>91 98863 2966</h4>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="custom">
-                    <i class="fas fa-envelope"></i>
-                    <h3>E-MAIL PARA CONTATO</h3>
-                    <h4>contato@adaptcontabilidade.com.br</h4>
-                </div>
-            </div>
-
-            <div class="col-md-2 text-right">
-                <a href="#" target="_blank" class="icon-socials">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" target="_blank" class="icon-socials">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" target="_blank" class="icon-socials">
-                    <i class="fab fa-youtube"></i>
-                </a>
-
-            </div>
-
+<div class="container">
+    <div class="row linha-top">
+        <div class="col-md-12 text-right">
         </div>
     </div>
-    <!--CONTAINER-->
+    <div class="row title">
+        <div class="col-md-3 text-left">
+            <a href="./">
+                <img class="logo-header" src="assets/img/logo-adapte-contabilidade-horizontal.svg"
+                alt="Adapte Contabilidade">
+            </a>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-3">
+            <div class="custom">
+                <i class="fas fa-phone"></i>
+                <h3>TELEFONES DE CONTATO</h3>
+                <h4>91 98863 2966</h4>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="custom">
+                <i class="fas fa-envelope"></i>
+                <h3>E-MAIL PARA CONTATO</h3>
+                <h4>contato@adaptcontabilidade.com.br</h4>
+            </div>
+        </div>
+
+        <div class="col-md-2 text-right">
+            <a href="#" target="_blank" class="icon-socials">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" class="icon-socials">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="icon-socials">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+</div>
+<!--CONTAINER-->
 
 
-    <div class="head">
-        <div class="nav-menu" id="nav">
-            <div class="logo-mobile"><img src="assets/img/logo-adapte-contabilidade-branco.png"></div>
-            <ul class="nav-links">
-                <li class="efeito-hr"><a href="./">Home
-                        <hr></a></li>
+<div class="head">
+    <div class="nav-menu" id="nav">
+        <div class="logo-mobile"><img src="assets/img/logo-adapte-contabilidade-branco.png"></div>
+        <ul class="nav-links">
+            <li class="efeito-hr"><a href="./">Home
+                <hr></a></li>
                 <li class="efeito-hr"><a href="#sobre-nos">Sobre nós
-                        <hr></a></li>
-                <li class="titulo-submenu">
-                    <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    <a>Soluções</a>
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    <div class="sub-menu">
-                        <ul>
-                            <li class="efeito-hr"><a href="gestao-contabil"> Gestão Contábil</a></li>
-                            <li class="efeito-hr"><a href="gestao-financeira"> Gestão Financeira</a></li>
-                            <li class="efeito-hr"><a href="gestao-de-pessoal"> Gestão Departamento Pessoal</a></li>
-                            <li class="efeito-hr"><a href="gestao-fiscal-tributaria"> Gestão Fiscal/Tributária</a></li>
-                            <li class="efeito-hr"><a href="declaracao-de-imposto-de-renda"> Declaração de Imposto de
-                                    Renda</a></li>
+                    <hr></a></li>
+                    <li class="titulo-submenu">
+                        <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <a>Soluções</a>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <div class="sub-menu">
+                            <ul>
+                                <li class="efeito-hr"><a href="gestao-contabil"> Gestão Contábil</a></li>
+                                <li class="efeito-hr"><a href="gestao-financeira"> Gestão Financeira</a></li>
+                                <li class="efeito-hr"><a href="gestao-de-pessoal"> Gestão Departamento Pessoal</a></li>
+                                <li class="efeito-hr"><a href="gestao-fiscal-tributaria"> Gestão Fiscal/Tributária</a></li>
+                                <li class="efeito-hr"><a href="declaracao-de-imposto-de-renda"> Declaração de Imposto de
+                                Renda</a></li>
+                            </ul>
+                        </div>
+
+                        <li class="titulo-submenu">
+                            <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            <a>Especialidades</a>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li class="efeito-hr"><a href="advogados"> Advogados</a></li>
+                                    <li class="efeito-hr"><a href="arquitetos"> Arquitetos</a></li>
+                                    <li class="efeito-hr"><a href="empregador-domestico"> Empregador Doméstico</a></li>
+                                    <li class="efeito-hr"><a href="engenheiros"> Engenheiros</a></li>
+                                    <li class="efeito-hr"><a href="escolas"> Escolas</a></li>
+                                    <li class="efeito-hr"><a href="empresas-de-ti"> Empresas de T.I</a></li>
+                                    <li class="efeito-hr"><a href="medicos-e-dentistas"> Médicos e Dentistas</a></li>
+                                    <li class="efeito-hr"><a href="mei"> MEI</a></li>
+                                    <li class="efeito-hr"><a href="salao-de-beleza"> Salão de beleza</a></li>
+                                    <li class="efeito-hr"><a href="pet-shop"> PET</a></li>
+                                    <li class="efeito-hr"><a href="prestadores-de-servicos"> Prestadores de Serviços</a></li>
+                                    <li class="efeito-hr"><a href="representantes-comerciais"> Representantes Comerciais</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="efeito-hr"><a href="#parceiros">Parceiros
+                            <hr></a></li>
+                            <li class="efeito-hr"><a href="#depoimentos">Depoimentos
+                                <hr></a></li>
+
+                            </li>
+
+
+                            <li><a class="btn btn-danger" href="#fale-conosco">PROPOSTA ONLINE</a></li>
                         </ul>
+
+                        <div class="burger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
                     </div>
-
-                <li class="titulo-submenu">
-                    <!-- ADICIONADO CLASSE PARA TRATAR CLICK MOBILE -->
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    <a>Especialidades</a>
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    <div class="sub-menu">
-                        <ul>
-                            <li class="efeito-hr"><a href="advogados"> Advogados</a></li>
-                            <li class="efeito-hr"><a href="arquitetos"> Arquitetos</a></li>
-                            <li class="efeito-hr"><a href="empregador-domestico"> Empregador Doméstico</a></li>
-                            <li class="efeito-hr"><a href="engenheiros"> Engenheiros</a></li>
-                            <li class="efeito-hr"><a href="escolas"> Escolas</a></li>
-                            <li class="efeito-hr"><a href="empresas-de-ti"> Empresas de T.I</a></li>
-                            <li class="efeito-hr"><a href="medicos-e-dentistas"> Médicos e Dentistas</a></li>
-                            <li class="efeito-hr"><a href="mei"> MEI</a></li>
-                            <li class="efeito-hr"><a href="salao-de-beleza"> Salão de beleza</a></li>
-                            <li class="efeito-hr"><a href="pet-shop"> PET</a></li>
-                            <li class="efeito-hr"><a href="prestadores-de-servicos"> Prestadores de Serviços</a></li>
-                            <li class="efeito-hr"><a href="representantes-comerciais"> Representantes Comerciais</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="efeito-hr"><a href="#parceiros">Parceiros
-                        <hr></a></li>
-                <li class="efeito-hr"><a href="#depoimentos">Depoimentos
-                        <hr></a></li>
-
-                </li>
-
-
-                <li><a class="btn btn-danger" href="#fale-conosco">PROPOSTA ONLINE</a></li>
-            </ul>
-
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-        <!--NAV-->
-    </div>
+                    <!--NAV-->
+                </div>

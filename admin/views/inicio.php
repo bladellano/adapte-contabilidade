@@ -41,7 +41,8 @@
  		<div class="col-md-2"><a href="https://analytics.google.com/analytics/web/" target="_blank" class="box-link" style="background:#F9CA24"><i class="fa fa-line-chart" aria-hidden="true"></i> Analytics</a>
  			<span class="btn-show-details"></span>
  			<div class="show-details">
- 				<p>Não possui o serviço.</p>
+ 				<p>Serviço ativado</p>
+ 				<p>Mude para Gmail</p>
  				<!-- <b>Usuário:</b><br> adaptcontabilidade@gmail.com<br> -->
  				<!-- <b>Senha:</b><br>xRlKq#u^bx -->
  			</div> 

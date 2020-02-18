@@ -10,12 +10,10 @@ Desenvolvimento FireFly
     --cor-color-secundaria: #EB4118;
     --cor-bg-principal: #FFF;
 }
-
-
 /*CUSTOMIZANDO CAROUSEL*/
 
 .carousel-caption .btn {
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
 }
 
 .carousel-caption h3 {
@@ -24,12 +22,11 @@ Desenvolvimento FireFly
 
 .carousel-caption {
     text-align: left;
-    width: 600px;
+    width: 670px;
     right: 0;
-    left: 44%;
+    left: 40%;
     padding-bottom: 200px;
 }
-
 
 /*FIM*/
 
@@ -49,8 +46,7 @@ Desenvolvimento FireFly
     width: 154px;
 }
 
-
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .slick-parceiros .slick-slide {
     margin: 2px;
@@ -70,7 +66,7 @@ Desenvolvimento FireFly
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .box-evento {
     width: 332px;
@@ -144,7 +140,7 @@ Desenvolvimento FireFly
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #owl-demo .item img {
     display: block;
@@ -153,7 +149,7 @@ Desenvolvimento FireFly
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .card .card-body h5 {
     color: #069;
@@ -265,7 +261,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #information {
     background-color: var(--cor-bg-principal);
@@ -289,7 +285,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #sobre-nos {
     background-color: #FFF;
@@ -330,7 +326,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #eventos .slick-eventos {
     padding-top: 20px;
@@ -362,7 +358,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #video-institucional .embed-responsive {
     width: 600px;
@@ -394,7 +390,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #enquete .nav-link.active {
     background: #FAFAFA;
@@ -433,7 +429,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #tres-servicos hr {
     border: #333 solid 2px;
@@ -502,7 +498,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #parceiros hr {
     border: #333 solid 2px;
@@ -529,7 +525,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #links-services h2 i {
     font-size: 26px;
@@ -617,7 +613,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #footer {
     background-color: #212121;
@@ -678,7 +674,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #assign {
     background: linear-gradient(45deg, #222, #333);
@@ -698,14 +694,14 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .form-control {
     margin-bottom: 24px;
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #depoimentos {
     background-color: var(--cor-color-principal);
@@ -761,7 +757,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .wrap-content-form button {
     position: absolute;
@@ -781,7 +777,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 #fale-conosco ul {
     list-style-position: inside;
@@ -845,7 +841,7 @@ body {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .bg-pg-default {
     background-image: url('../../assets/img/bg-pagina.jpg');
@@ -918,7 +914,7 @@ h3.border-bottom.border-gray {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .custom {
     margin-top: 28px;
@@ -941,7 +937,7 @@ h3.border-bottom.border-gray {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .icon-socials {
     color: #FFF;
@@ -958,7 +954,7 @@ h3.border-bottom.border-gray {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .head {
     width: 100%;
@@ -1007,7 +1003,7 @@ h3.border-bottom.border-gray {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .nav-links {
     transition: .3s;
@@ -1021,7 +1017,7 @@ h3.border-bottom.border-gray {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .efeito-hr hr {
     border: 6px solid #FFF;
@@ -1095,7 +1091,7 @@ h3.border-bottom.border-gray {
 }
 
 
-/*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+/*BLOCO SEPARADOR*/
 
 .fa.fa-chevron-down,
 .fa.fa-chevron-left {
@@ -1118,11 +1114,10 @@ h3.border-bottom.border-gray {
 .title {
     padding: 10px 12px;
     background-color: #FFF;
-    /* border-bottom: 1px dotted var(--cor-color-principal); */
 }
 
 .linha-top {
-    background-color: var(--cor-color-principal);
+    /* background-color: var(--cor-color-principal); */
     color: #FFF;
 }
 

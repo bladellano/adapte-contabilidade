@@ -19,7 +19,7 @@ $body = '<!DOCTYPE html>
          <table border=0 width="650px" bgcolor="#FFF" 
             style="font-family: sans serif;box-shadow: 2px 2px 10px #CCC;border:1px solid #999">
             <tr>
-               <th align="center" bgcolor="#273c75" style="color:#FFF">
+               <th align="center" bgcolor="#273C75" style="color:#FFF">
                   <h3>FORMULÁRIO DE PROPOSTA ON-LINE</h3>
                </th>
             </tr>

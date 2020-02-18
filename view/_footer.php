@@ -40,15 +40,15 @@
       </ul>
     </div>
     <div class="col-md-3 d-none d-sm-block">
-      <h3>Institucional</h3>
+      <h3>Acesso Rápido</h3>
       <ul>
-        <li><a href="#">Inicial</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Orçamento</a></li>
-        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="abrir-empresa">ABRIR EMPRESA</a></li>
+        <li><a href="migrar-empresa">MIGRAR EMPRESA</a></li>
+        <li><a href="regularizar-empresa">REGULARIZAR EMPRESA</a></li>
+        <li><a href="pet-shop">PET SHOP</a></li>
+        <li><a href="advogados">ADVOGADOS</a></li>
+        <li><a href="medicos-e-dentistas">MÉDICOS E DENTISTAS</a></li>
+        <li><a href="mei">MEI</a></li>
       </ul></div>
       <div class="col-md-3 d-none d-sm-block">
 
