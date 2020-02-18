@@ -15,16 +15,20 @@
               <a class="nav-link" href="noticias.php" >Notícias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="fotos.php">Fotos</a>
+              <!-- <a class="nav-link" href="fotos.php">Fotos</a> -->
+              <a class="nav-link text-muted" href="#">Fotos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="albuns.php">Albuns</a>
+              <!-- <a class="nav-link" href="albuns.php">Albuns</a> -->
+              <a class="nav-link text-muted" href="#">Albuns</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="membros.php">Membros</a>
+              <!-- <a class="nav-link" href="membros.php">Membros</a> -->
+              <a class="nav-link text-muted" href="#">Membros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="videos.php">Videos</a>
+              <!-- <a class="nav-link" href="videos.php">Videos</a> -->
+              <a class="nav-link text-muted" href="#">Videos</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

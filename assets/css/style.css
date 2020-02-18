@@ -10,20 +10,27 @@ Desenvolvimento FireFly
     --cor-color-secundaria: #EB4118;
     --cor-bg-principal: #FFF;
 }
+
+
 /*CUSTOMIZANDO CAROUSEL*/
-.carousel-caption .btn{
-    border:1px solid #FFF;
+
+.carousel-caption .btn {
+    border: 1px solid #FFF;
 }
-.carousel-caption h3{
+
+.carousel-caption h3 {
     font-size: 34px;
 }
-.carousel-caption{
+
+.carousel-caption {
     text-align: left;
     width: 600px;
     right: 0;
     left: 44%;
     padding-bottom: 200px;
 }
+
+
 /*FIM*/
 
 * {
@@ -33,12 +40,16 @@ Desenvolvimento FireFly
     box-sizing: border-box;
     font-size: 16px;
 }
+
 .logo-header {
     width: 262px;
 }
+
 .logo-footer {
     width: 154px;
 }
+
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .slick-parceiros .slick-slide {
@@ -57,6 +68,8 @@ Desenvolvimento FireFly
     filter: opacity(100%) grayscale(1);
     transition: .3s;
 }
+
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .box-evento {
@@ -129,6 +142,8 @@ Desenvolvimento FireFly
 .box-evento .resumo a:hover {
     background-color: #003048;
 }
+
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #owl-demo .item img {
@@ -136,6 +151,8 @@ Desenvolvimento FireFly
     width: 100%;
     height: auto;
 }
+
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .card .card-body h5 {
@@ -147,6 +164,8 @@ Desenvolvimento FireFly
     text-align: center;
     padding: 10px;
 }
+
+
 /* PERSONALIZANDO ARROWS DO SLICK */
 
 .slick-next.slick-arrow,
@@ -185,6 +204,7 @@ Desenvolvimento FireFly
     content: "‹";
 }
 
+
 /* FIM */
 
 .pg-default {
@@ -195,10 +215,11 @@ body {
     background: var(--cor-bg-principal);
 }
 
+
 /* PERSONALIZANDO BOTÃO SUBIR TOPO */
 
 .topo {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     width: 40px;
     height: 40px;
     color: #FFF;
@@ -210,9 +231,10 @@ body {
     font-size: 20px;
     position: fixed;
     bottom: 40px;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 /* PERSONALIZANDO BOTÃO BOOTSTRAP */
 
@@ -242,6 +264,7 @@ body {
     color: #FFF;
 }
 
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #information {
@@ -265,11 +288,13 @@ body {
     font-weight: 300;
 }
 
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #sobre-nos {
     background-color: #FFF;
 }
+
 #sobre-nos img {
     max-width: 98%;
     padding-bottom: 20px;
@@ -278,17 +303,17 @@ body {
 #sobre-nos p {
     text-align: right;
     line-height: 35px;
-    color:#000;
+    color: #000;
 }
 
 #sobre-nos h3 {
     text-align: right;
-    color:#000;
+    color: #000;
 }
 
 #sobre-nos h2 i {
     font-size: 26px;
-    color:#000;
+    color: #000;
 }
 
 #sobre-nos h2 {
@@ -303,6 +328,7 @@ body {
     width: 100px;
     margin: 0 auto;
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -334,6 +360,8 @@ body {
     width: 200px;
     margin: 0 auto;
 }
+
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #video-institucional .embed-responsive {
@@ -364,6 +392,7 @@ body {
     border-top: 2px solid var(--cor-color-secundaria);
     border-bottom: 2px solid var(--cor-color-secundaria);
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -402,6 +431,7 @@ body {
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -442,10 +472,11 @@ body {
     /* margin-top: -30px; */
 }
 
-.box-servicos i.fas{
-    font-size:33px;
+.box-servicos i.fas {
+    font-size: 33px;
     margin-bottom: 10px;
 }
+
 .box-servicos a {
     color: #FFF;
     text-decoration: none;
@@ -469,6 +500,7 @@ body {
     transition: .3s;
     background: var(--cor-color-secundaria);
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -495,6 +527,7 @@ body {
     padding-top: 20px;
     background-color: #EEE;
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -583,6 +616,7 @@ body {
     color: #333;
 }
 
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #footer {
@@ -643,6 +677,7 @@ body {
     line-height: 26px;
 }
 
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 #assign {
@@ -662,11 +697,13 @@ body {
     max-height: 33px;
 }
 
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .form-control {
     margin-bottom: 24px;
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -723,7 +760,9 @@ body {
     color: #FFF;
 }
 
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
+
 .wrap-content-form button {
     position: absolute;
     left: 108px;
@@ -740,6 +779,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -804,6 +844,7 @@ body {
     margin: 0 auto;
 }
 
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .bg-pg-default {
@@ -830,33 +871,52 @@ body {
 .bg-pg-default .container h6 a:hover {
     color: var(--cor-color-principal);
 }
+
 .pg-content h3 {
     font-size: 34px;
-    color:var(--cor-color-principal);
+    color: var(--cor-color-principal);
 }
+
+.pg-content a:hover {
+    color: var(--cor-color-secundaria);
+}
+
 .pg-content a {
     font-size: 28px;
+    text-decoration: none;
+    transition: .3s;
 }
+
+.pg-content ol li {
+    font-size: 22px;
+}
+
 .pg-content ol {
-margin-left: 90px;
+    margin-left: 90px;
+    margin-bottom: 10px;
 }
+
 .pg-content p {
     font-size: 22px;
     margin-top: 20px;
     margin-bottom: 25px;
 }
-.jumbotron span{
+
+.jumbotron span {
     letter-spacing: -1px;
     font-size: 28px;
     font-weight: bold;
 }
-.jumbotron{
-    background-color: #C8FF03;
+
+.jumbotron {
+    background-color: #EEE;
+    border: 1px solid #069;
 }
 
 h3.border-bottom.border-gray {
     margin-top: 24px;
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -879,6 +939,7 @@ h3.border-bottom.border-gray {
 .custom h4 {
     color: #777;
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -945,6 +1006,7 @@ h3.border-bottom.border-gray {
     transition: all 0.3s ease;
 }
 
+
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
 .nav-links {
@@ -1008,26 +1070,30 @@ h3.border-bottom.border-gray {
 .nav-links li:hover .sub-menu ul li a:hover {
     color: var(--cor-color-secundaria);
 }
+
 .nav-links li:hover .sub-menu ul li {
     display: block;
     /* display: inline-block; */
     /* width: 30%; */
     /* padding: 15px; */
     padding: 2px;
-    padding-left:10px;
+    padding-left: 10px;
     border-radius: 0;
     text-align: left;
-    width: 280px;  
+    width: 280px;
 }
 
 .nav-links li:hover .sub-menu ul li:last-child {
     border-bottom: none;
 }
-.submenu ul li {/* COLOCA OS SUB ITENS UM DO LADO DO OUTRO */    
+
+.submenu ul li {
+    /* COLOCA OS SUB ITENS UM DO LADO DO OUTRO */
     width: 50%;
     height: 50px;
     overflow: hidden;
 }
+
 
 /*~~~~~~~~~~BLOCO~~~~~~~~~~*/
 
@@ -1173,6 +1239,7 @@ h3.border-bottom.border-gray {
         display: block;
     }
 }
+
 
 /*FIM MEDIA*/
 
