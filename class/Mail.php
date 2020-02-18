@@ -18,22 +18,22 @@ define('SMTP_HOST', 'smtp.umbler.com');
 define('SMTP_PORT', 587); 
 // define('SMTP_PORT', 25); 
 
-echo '<pre>'; print_r($para); echo '</pre>';  
-echo '<pre>'; print_r($de); echo '</pre>';  
-echo '<pre>'; print_r($de_nome); echo '</pre>';  
-echo '<pre>'; print_r($assunto); echo '</pre>'; 
+
 // die();
 
 class Mail{
 
 	public function send($para, $de, $de_nome, $assunto, $corpo) {
-		
+	 
+ echo $para;
+ 
 		$mail = new PHPMailer();
 		$mail->IsSMTP();		// Ativar SMTP
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
 		// $mail->SMTPSecure = 'ssl';    
 		// $mail->SMTPSecure = 'tls';    
-		$mail->SMTPDebug = SMTP::DEBUG_SERVER;   
+		// $mail->SMTPDebug = SMTP::DEBUG_SERVER;   
+		$mail->SMTPDebug = 2;   
 		$mail->CharSet = 'UTF-8';		 
 		$mail->isHTML(true); 
 		$mail->SMTPAuth = true; // Autenticação		
@@ -49,7 +49,7 @@ class Mail{
 		$mail->Subject = $assunto;
 		$mail->Body = $corpo;
 		$mail->AddAddress($para);
-		$mail->AddReplyTo($para, 'CAIO');
+		// $mail->AddReplyTo($para, 'CAIO');
 		// $mail->AddAddress('bladellano@yahoo.com.br');
 
 		if(!$mail->Send()) {
