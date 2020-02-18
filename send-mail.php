@@ -55,6 +55,6 @@ $body = '<!DOCTYPE html>
    </body>
 </html>';
 
-$result = $email->send("bladellano@yahoo.com.br",$_POST['email_'],$_POST['nome_'],"CONTATO ATRAVÉS DO PORTAL",$body);
+$result = $email->send("contato@adaptcontabilidade.com.br",$_POST['email_'],$_POST['nome_'],"CONTATO ATRAVÉS DO PORTAL",$body);
 
 echo json_encode($result);
