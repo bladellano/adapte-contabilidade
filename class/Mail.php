@@ -48,7 +48,7 @@ class Mail{
 		$mail->SetFrom($de, $de_nome);
 		$mail->Subject = $assunto;
 		$mail->Body = $corpo;
-		// $mail->AddAddress($para);
+		$mail->AddAddress($para);
 		$mail->AddReplyTo($para, 'CAIO');
 		// $mail->AddAddress('bladellano@yahoo.com.br');
 
