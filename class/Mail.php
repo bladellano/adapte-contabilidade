@@ -18,14 +18,20 @@ define('SMTP_HOST', 'smtp.umbler.com');
 define('SMTP_PORT', 587); 
 // define('SMTP_PORT', 25); 
 
+echo '<pre>'; print_r($para); echo '</pre>';  
+echo '<pre>'; print_r($de); echo '</pre>';  
+echo '<pre>'; print_r($de_nome); echo '</pre>';  
+echo '<pre>'; print_r($assunto); echo '</pre>'; 
+die();
+
 class Mail{
 
 	public function send($para, $de, $de_nome, $assunto, $corpo) {
 		
 		$mail = new PHPMailer();
 		$mail->IsSMTP();		// Ativar SMTP
-		// $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
-		$mail->SMTPSecure = 'ssl';    
+		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
+		// $mail->SMTPSecure = 'ssl';    
 		// $mail->SMTPSecure = 'tls';    
 		$mail->SMTPDebug = SMTP::DEBUG_SERVER;   
 		$mail->CharSet = 'UTF-8';		 

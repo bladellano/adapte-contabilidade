@@ -67,6 +67,6 @@ $body = '<!DOCTYPE html>
    </body>
 </html>';
 
-$result = $email->send("bladellano@yahoo.com.br",$_POST['email'],$_POST['nome'],"FORMULÁRIO PROPOSTA ON-LINE",$body);
+$result = $email->send("contato@adaptcontabilidade.com.br",$_POST['email'],$_POST['nome'],"FORMULÁRIO PROPOSTA ON-LINE",$body);
 
 echo json_encode($result);
