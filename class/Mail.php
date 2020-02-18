@@ -24,8 +24,8 @@ class Mail{
 		
 		$mail = new PHPMailer();
 		$mail->IsSMTP();		// Ativar SMTP
-		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
-		// $mail->SMTPSecure = 'ssl';    
+		// $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
+		$mail->SMTPSecure = 'ssl';    
 		// $mail->SMTPSecure = 'tls';    
 		$mail->SMTPDebug = SMTP::DEBUG_SERVER;   
 		$mail->CharSet = 'UTF-8';		 
