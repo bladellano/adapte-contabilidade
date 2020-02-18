@@ -7,51 +7,34 @@ use PHPMailer\PHPMailer\Exception;
 require("vendor/autoload.php");
 
 define('SMTP_USER', 'contato@adaptcontabilidade.com.br');
-// define('SMTP_USER', 'contato@rosadesaroncolegio.com.br');
-// define('SMTP_USER', 'contato@adaptecontabilidade.com.br');
 define('SMTP_PASS', '#vO?Pm5{,9');
-// define('SMTP_PASS', 'nt1@2012');
-// define('SMTP_PASS', 'Admin2020!');
 define('SMTP_HOST', 'smtp.umbler.com');
-// define('SMTP_HOST', 'mail.paideiaeducacional.com.br');
-// define('SMTP_PORT', 465); 
-define('SMTP_PORT', 587); 
-// define('SMTP_PORT', 25); 
-
-
-// die();
+define('SMTP_PORT', 587);  
 
 class Mail{
 
-	public function send($para, $de, $de_nome, $assunto, $corpo) {
-	 
- echo $para."\n";
+	public function send($para, $de, $de_nome, $assunto, $corpo) {	 
 
 		$mail = new PHPMailer();
-		$mail->IsSMTP();		// Ativar SMTP
-		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
-		// $mail->SMTPSecure = 'ssl';    
-		// $mail->SMTPSecure = 'tls';    
-		// $mail->SMTPDebug = SMTP::DEBUG_SERVER;   
-		$mail->SMTPDebug = 2;   
+		$mail->IsSMTP();		/*ATIVAR SMTP*/
+		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
+		 $mail->SMTPDebug = SMTP::DEBUG_SERVER;  
 		$mail->CharSet = 'UTF-8';		 
 		$mail->isHTML(true); 
-		$mail->SMTPAuth = true; // Autenticação		
-
-
+		$mail->SMTPAuth = true; /*AUTENTICAÇÃO*/		
+		/*CREDENCIAIS*/
 		$mail->Host = SMTP_HOST;	 
 		$mail->Port = SMTP_PORT;  	 
 		$mail->Username = SMTP_USER;
 		$mail->Password = SMTP_PASS;
 
-		//Variáveis da mensagem, remetente, assunto, mensagem e destinatário.
-		// $mail->SetFrom($de, $de_nome);
+		/*VARIÁVEIS DA MENSAGEM, REMETENTE, ASSUNTO, MENSAGEM E DESTINATÁRIO.*/
+
 		$mail->SetFrom($para, $de_nome);
 		$mail->Subject = $assunto;
 		$mail->Body = $corpo;
 		$mail->AddAddress($para);
-		// $mail->AddReplyTo($para, 'CAIO');
-		// $mail->AddAddress('bladellano@yahoo.com.br');
+		$mail->AddReplyTo($de, $de_nome);
 
 		if(!$mail->Send()) {
 			return ['status' => false, 'message' => 'Mensagem não enviada: '.$mail->ErrorInfo];
