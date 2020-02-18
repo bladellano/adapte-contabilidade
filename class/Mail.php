@@ -22,7 +22,7 @@ echo '<pre>'; print_r($para); echo '</pre>';
 echo '<pre>'; print_r($de); echo '</pre>';  
 echo '<pre>'; print_r($de_nome); echo '</pre>';  
 echo '<pre>'; print_r($assunto); echo '</pre>'; 
-die();
+// die();
 
 class Mail{
 
