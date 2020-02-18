@@ -23,14 +23,16 @@ class Mail{
 	public function send($para, $de, $de_nome, $assunto, $corpo) {
 		
 		$mail = new PHPMailer();
+		$mail->IsSMTP();		// Ativar SMTP
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;    
 		// $mail->SMTPSecure = 'ssl';    
 		// $mail->SMTPSecure = 'tls';    
-		// $mail->SMTPDebug = SMTP::DEBUG_SERVER;   
-		$mail->IsSMTP();		// Ativar SMTP
-		$mail->CharSet = 'UTF-8';		 
+		$mail->SMTPDebug = SMTP::DEBUG_SERVER;   
+		// $mail->CharSet = 'UTF-8';		 
 		$mail->isHTML(true); 
 		$mail->SMTPAuth = true; // Autenticação		
+
+		
 		$mail->Host = SMTP_HOST;	 
 		$mail->Port = SMTP_PORT;  	 
 		$mail->Username = SMTP_USER;
