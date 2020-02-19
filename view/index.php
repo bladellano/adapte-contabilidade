@@ -373,7 +373,7 @@
                 <img src="assets/img/nayara.jpg" alt="">
                 <p>Naiara Afonso</p>
                 "Parabéns a Adapt Contabilidade por serviços maravilhosos e esclarecedoros. Amei! desejo todo
-                sucesso do munto!"
+                sucesso do mundo!"
             </div>
         </div>
     </div>

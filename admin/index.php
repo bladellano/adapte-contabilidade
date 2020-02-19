@@ -23,19 +23,19 @@
 </head>
 
 <body>
-
- <div class="wrapper fadeInDown">
+  <div class="wrapper fadeInDown">
+    <h3>Gerenciador de Conteúdo do Portal</h3>
     <div id="formContent">
       <div class="fadeIn first">
        <i class="fas fa-unlock-alt"></i>
-      </div>
-      <form class="form-signin" id="frmLogin" method="POST">
-        <input type="text" id="inputEmail" name="inputEmail" class="fadeIn second" placeholder="LOGIN">
-        <input type="text" id="inputPassword" name="inputPassword" class="fadeIn third" placeholder="PASSWORD">
-        <button class="btn btn-lg btn-primary" id="entrarSistema" type="submit">Entrar</button>
-      </form>
-    </div>
+     </div>
+     <form class="form-signin" id="frmLogin" method="POST">
+      <input type="text" id="inputEmail" name="inputEmail" class="fadeIn second" placeholder="LOGIN">
+      <input type="text" id="inputPassword" name="inputPassword" class="fadeIn third" placeholder="PASSWORD">
+      <button class="btn btn-lg btn-primary" id="entrarSistema" type="submit">Entrar</button>
+    </form>
   </div>
+</div>
 
 
 </body>

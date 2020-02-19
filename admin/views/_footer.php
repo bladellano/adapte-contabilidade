@@ -1,7 +1,7 @@
  
 <footer class="footer" style="bottom: -60px">
 	<div class="container">
-		<p class="text-muted">Copyright © 2019 Firefly Sites - Todos os direitos reservados.</p>
+		<p class="text-muted">Copyright © <?=date('Y')?> | Caio Silva (91) 9 8265-0277 - Todos os direitos reservados.</p>
 	</div>
 </footer>
 

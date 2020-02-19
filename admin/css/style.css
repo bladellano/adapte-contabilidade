@@ -95,7 +95,7 @@
 
   }
   .ajs-message.ajs-error, .ajs-message.ajs-success {
-    color: #fff !important;
+    color: #FFF !important;
     text-shadow: 2px 1px #333;
   }
 

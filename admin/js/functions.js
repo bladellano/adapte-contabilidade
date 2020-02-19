@@ -95,7 +95,7 @@ $(function () {
         e.preventDefault();
         vazios = validarFormVazio('frmLogin');
         if (vazios > 0) 
-            return alertify.error("Preencha os campos!!");        
+            return alertify.error("PREENCHA O(S) CAMPO(S) CORRETAMENTE!");        
 
         let dados = $('#frmLogin').serialize();
 
