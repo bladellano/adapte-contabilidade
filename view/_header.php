@@ -9,9 +9,9 @@
     <title>.: Adapt Contabilidade :.</title>
 
     <meta name="author" content="Caio Silva">
-    <meta name="description" content="Escritório de Contabilidade Online (91) 98863 2966, Belém-PA">
-    <meta name="keywords" content="site de contabilidade, site para contador, site contabil, contabilidade, contabil, site exclusivo contabil, contábil, virtual contabilidade, o que precisa para abrir uma empresa, regularizar, como conseguir clientes contabilidade, como abrir uma contabilidade, online contabilidade, novidades na contabilidade, mercado de contabilidade, site do contador, notícias contabilidade, site contabilista, escritório online, contabilidade em Belém, Belém, Pará, Ananindeua, Brasil">
-    <meta name="copyright" content="© 2020 Adapte Contabilidade" />
+    <meta name="description" content="Serviços Contábeis: regularizar empresa, abrir empresa, advogados, mei, migrar empresas e muito mais | Contato: (91) 98863 2966, E-mail: contato@adaptcontabilidade.com.br, Belém-Pará-Brasil">
+    <meta name="keywords" content="site de contabilidade, site para contador, site contabil, contabilidade, contabil, site exclusivo contabil, contábil, contabilidade, o que precisa para abrir uma empresa, regularizar, como conseguir clientes, como abrir uma contabilidade, online contabilidade, novidades na contabilidade, mercado de contabilidade, site do contador, notícias contabilidade, site contabilista, contabilidade em Belém, Belém, Pará, Brasil">
+    <meta name="copyright" content="© 2020 Adapt Contabilidade" />
     
     <link rel="shortcut icon" href="assets/favicon-adapt/favicon-32x32.png" />
     <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -107,7 +107,7 @@ aria-hidden="true">
         <div class="col-md-3 text-left">
             <a href="./">
                 <img class="logo-header" src="assets/img/logo-adapte-contabilidade-horizontal.svg"
-                alt="Adapte Contabilidade">
+                alt="Adapt Contabilidade">
             </a>
         </div>
         <div class="col-md-1">
