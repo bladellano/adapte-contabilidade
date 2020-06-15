@@ -8,8 +8,8 @@ switch ($_SERVER['SERVER_NAME']) {
 		define("DBNAME","db_adapt");
 	break;	
 	default:
-		define("HOST","mysql873.umbler.com");
-		define("USER","root_adapt");
+	define("HOST","mysql380.umbler.com:41890");
+		define("USER","db_adapt");
 		define("PASS","s672lUKGr*(2");
 		define("DBNAME","db_adapt");
 	break;
